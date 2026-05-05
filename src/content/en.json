@@ -19,24 +19,54 @@
     "titleB": "Delivered",
     "titleHighlight": "Locally",
     "subtitle": "An official K2 Partnering company delivering world-class ServiceNow implementation, digital transformation, and enterprise workflow solutions across Saudi Arabia and beyond.",
-    "ctaPrimary": "Talk to a Saudi-based Expert",
+    "ctaPrimary": "Talk to a Expert",
     "ctaSecondary": "See Global Case Studies",
     "features": [
-      { "title": "Local Presence", "desc": "On-ground experts across Saudi Arabia for rapid delivery." },
-      { "title": "24/7 Support", "desc": "Always-on operations ensuring continuity and trust." },
-      { "title": "Bilingual Team", "desc": "Seamless English & Arabic engagement across teams." }
+      {
+        "title": "Local Presence",
+        "desc": "On-ground experts across Saudi Arabia for rapid delivery."
+      },
+      {
+        "title": "24/7 Support",
+        "desc": "Always-on operations ensuring continuity and trust."
+      },
+      {
+        "title": "Bilingual Team",
+        "desc": "Seamless English & Arabic engagement across teams."
+      }
     ],
-    "cities": { "riyadh": "Riyadh HQ", "london": "London", "dubai": "Dubai", "ny": "New York" },
+    "cities": {
+      "riyadh": "Riyadh HQ",
+      "london": "London",
+      "dubai": "Dubai",
+      "ny": "New York"
+    },
     "stats": [
-      { "value": "100+", "label": "Projects" },
-      { "value": "24/7", "label": "Support" },
-      { "value": "4", "label": "Continents" }
+      {
+        "value": "100+",
+        "label": "Projects"
+      },
+      {
+        "value": "24/7",
+        "label": "Support"
+      },
+      {
+        "value": "4",
+        "label": "Continents"
+      }
     ],
     "imageAlt": "Riyadh skyline with global delivery network"
   },
   "trust": {
     "eyebrow": "Trusted by Government, Enterprise & Vision 2030 Leaders",
-    "partners": ["K2 Partnering", "Vision 2030", "ServiceNow Elite", "SABIC", "STC", "Ministry of Health"]
+    "partners": [
+      "K2 Partnering",
+      "Vision 2030",
+      "ServiceNow Elite",
+      "SABIC",
+      "STC",
+      "Ministry of Health"
+    ]
   },
   "services": {
     "eyebrow": "Our Capabilities",
@@ -67,10 +97,26 @@
           "Executive alignment and stakeholder buy-in"
         ],
         "process": [
-          { "step": "1", "title": "Discovery", "desc": "Assess current platform maturity, gaps, and business goals." },
-          { "step": "2", "title": "Strategy", "desc": "Define roadmap, priorities, and investment plan." },
-          { "step": "3", "title": "Design", "desc": "Blueprint the solution architecture and governance model." },
-          { "step": "4", "title": "Enablement", "desc": "Equip teams and leadership to drive adoption." }
+          {
+            "step": "1",
+            "title": "Discovery",
+            "desc": "Assess current platform maturity, gaps, and business goals."
+          },
+          {
+            "step": "2",
+            "title": "Strategy",
+            "desc": "Define roadmap, priorities, and investment plan."
+          },
+          {
+            "step": "3",
+            "title": "Design",
+            "desc": "Blueprint the solution architecture and governance model."
+          },
+          {
+            "step": "4",
+            "title": "Enablement",
+            "desc": "Equip teams and leadership to drive adoption."
+          }
         ]
       },
       {
@@ -92,10 +138,26 @@
           "Future-proof architecture with upgrade-ready configurations"
         ],
         "process": [
-          { "step": "1", "title": "Blueprint", "desc": "Define scope, architecture, and integration points." },
-          { "step": "2", "title": "Build", "desc": "Configure, customize, and integrate the platform." },
-          { "step": "3", "title": "Test", "desc": "Comprehensive QA, UAT, and performance validation." },
-          { "step": "4", "title": "Deploy", "desc": "Go-live with full change management support." }
+          {
+            "step": "1",
+            "title": "Blueprint",
+            "desc": "Define scope, architecture, and integration points."
+          },
+          {
+            "step": "2",
+            "title": "Build",
+            "desc": "Configure, customize, and integrate the platform."
+          },
+          {
+            "step": "3",
+            "title": "Test",
+            "desc": "Comprehensive QA, UAT, and performance validation."
+          },
+          {
+            "step": "4",
+            "title": "Deploy",
+            "desc": "Go-live with full change management support."
+          }
         ]
       },
       {
@@ -117,10 +179,26 @@
           "Real-time visibility into IT health and SLA compliance"
         ],
         "process": [
-          { "step": "1", "title": "Assess", "desc": "Evaluate current ITSM maturity and pain points." },
-          { "step": "2", "title": "Design", "desc": "Define service model, workflows, and SLA targets." },
-          { "step": "3", "title": "Implement", "desc": "Deploy and configure ITSM modules." },
-          { "step": "4", "title": "Optimize", "desc": "Tune performance and drive continuous improvement." }
+          {
+            "step": "1",
+            "title": "Assess",
+            "desc": "Evaluate current ITSM maturity and pain points."
+          },
+          {
+            "step": "2",
+            "title": "Design",
+            "desc": "Define service model, workflows, and SLA targets."
+          },
+          {
+            "step": "3",
+            "title": "Implement",
+            "desc": "Deploy and configure ITSM modules."
+          },
+          {
+            "step": "4",
+            "title": "Optimize",
+            "desc": "Tune performance and drive continuous improvement."
+          }
         ]
       },
       {
@@ -142,10 +220,26 @@
           "Lower operational risk and improved business continuity"
         ],
         "process": [
-          { "step": "1", "title": "Discover", "desc": "Map all infrastructure assets and dependencies." },
-          { "step": "2", "title": "Monitor", "desc": "Implement event management and health monitoring." },
-          { "step": "3", "title": "Correlate", "desc": "Enable AIOps for intelligent event correlation." },
-          { "step": "4", "title": "Automate", "desc": "Deploy remediation automation and runbooks." }
+          {
+            "step": "1",
+            "title": "Discover",
+            "desc": "Map all infrastructure assets and dependencies."
+          },
+          {
+            "step": "2",
+            "title": "Monitor",
+            "desc": "Implement event management and health monitoring."
+          },
+          {
+            "step": "3",
+            "title": "Correlate",
+            "desc": "Enable AIOps for intelligent event correlation."
+          },
+          {
+            "step": "4",
+            "title": "Automate",
+            "desc": "Deploy remediation automation and runbooks."
+          }
         ]
       },
       {
@@ -167,10 +261,26 @@
           "Improved employee satisfaction scores"
         ],
         "process": [
-          { "step": "1", "title": "Audit", "desc": "Review current HR processes and system landscape." },
-          { "step": "2", "title": "Design", "desc": "Map employee journeys and service catalog." },
-          { "step": "3", "title": "Build", "desc": "Implement HRSD modules and self-service portal." },
-          { "step": "4", "title": "Adopt", "desc": "Drive HR team and employee adoption." }
+          {
+            "step": "1",
+            "title": "Audit",
+            "desc": "Review current HR processes and system landscape."
+          },
+          {
+            "step": "2",
+            "title": "Design",
+            "desc": "Map employee journeys and service catalog."
+          },
+          {
+            "step": "3",
+            "title": "Build",
+            "desc": "Implement HRSD modules and self-service portal."
+          },
+          {
+            "step": "4",
+            "title": "Adopt",
+            "desc": "Drive HR team and employee adoption."
+          }
         ]
       },
       {
@@ -192,10 +302,26 @@
           "Predictable cost model for IT operations"
         ],
         "process": [
-          { "step": "1", "title": "Onboard", "desc": "Knowledge transfer and environment assessment." },
-          { "step": "2", "title": "Stabilize", "desc": "Resolve existing issues and establish baseline." },
-          { "step": "3", "title": "Optimize", "desc": "Continuous improvement and enhancement delivery." },
-          { "step": "4", "title": "Evolve", "desc": "Strategic platform roadmap and capability expansion." }
+          {
+            "step": "1",
+            "title": "Onboard",
+            "desc": "Knowledge transfer and environment assessment."
+          },
+          {
+            "step": "2",
+            "title": "Stabilize",
+            "desc": "Resolve existing issues and establish baseline."
+          },
+          {
+            "step": "3",
+            "title": "Optimize",
+            "desc": "Continuous improvement and enhancement delivery."
+          },
+          {
+            "step": "4",
+            "title": "Evolve",
+            "desc": "Strategic platform roadmap and capability expansion."
+          }
         ]
       },
       {
@@ -217,10 +343,26 @@
           "Predictive analytics for proactive problem management"
         ],
         "process": [
-          { "step": "1", "title": "Identify", "desc": "Map automation opportunities and ROI potential." },
-          { "step": "2", "title": "Design", "desc": "Architect AI and automation workflows." },
-          { "step": "3", "title": "Deploy", "desc": "Implement and test automation solutions." },
-          { "step": "4", "title": "Scale", "desc": "Expand automation coverage and measure impact." }
+          {
+            "step": "1",
+            "title": "Identify",
+            "desc": "Map automation opportunities and ROI potential."
+          },
+          {
+            "step": "2",
+            "title": "Design",
+            "desc": "Architect AI and automation workflows."
+          },
+          {
+            "step": "3",
+            "title": "Deploy",
+            "desc": "Implement and test automation solutions."
+          },
+          {
+            "step": "4",
+            "title": "Scale",
+            "desc": "Expand automation coverage and measure impact."
+          }
         ]
       },
       {
@@ -242,10 +384,26 @@
           "Faster time-to-value for cloud initiatives"
         ],
         "process": [
-          { "step": "1", "title": "Assess", "desc": "Evaluate current infrastructure and cloud readiness." },
-          { "step": "2", "title": "Strategize", "desc": "Define cloud architecture and migration roadmap." },
-          { "step": "3", "title": "Govern", "desc": "Establish policies, guardrails, and cost controls." },
-          { "step": "4", "title": "Execute", "desc": "Migrate, optimize, and operate cloud environments." }
+          {
+            "step": "1",
+            "title": "Assess",
+            "desc": "Evaluate current infrastructure and cloud readiness."
+          },
+          {
+            "step": "2",
+            "title": "Strategize",
+            "desc": "Define cloud architecture and migration roadmap."
+          },
+          {
+            "step": "3",
+            "title": "Govern",
+            "desc": "Establish policies, guardrails, and cost controls."
+          },
+          {
+            "step": "4",
+            "title": "Execute",
+            "desc": "Migrate, optimize, and operate cloud environments."
+          }
         ]
       },
       {
@@ -267,10 +425,26 @@
           "Delivery continuity for transformation programs"
         ],
         "process": [
-          { "step": "1", "title": "Define", "desc": "Understand role requirements and delivery context." },
-          { "step": "2", "title": "Match", "desc": "Identify and vet the right certified professionals." },
-          { "step": "3", "title": "Engage", "desc": "Onboard resources and integrate with your team." },
-          { "step": "4", "title": "Support", "desc": "Ongoing performance management and delivery oversight." }
+          {
+            "step": "1",
+            "title": "Define",
+            "desc": "Understand role requirements and delivery context."
+          },
+          {
+            "step": "2",
+            "title": "Match",
+            "desc": "Identify and vet the right certified professionals."
+          },
+          {
+            "step": "3",
+            "title": "Engage",
+            "desc": "Onboard resources and integrate with your team."
+          },
+          {
+            "step": "4",
+            "title": "Support",
+            "desc": "Ongoing performance management and delivery oversight."
+          }
         ]
       }
     ]
@@ -295,7 +469,12 @@
           "Compliance and governance demands increasing complexity"
         ],
         "solutions": "We help government entities unify citizen services on ServiceNow, implement ITSM for shared services, and build digital platforms that reduce bureaucracy and improve public service delivery.",
-        "benefits": ["60% faster service delivery", "Unified citizen portal", "Vision 2030 compliance", "Inter-agency integration"]
+        "benefits": [
+          "60% faster service delivery",
+          "Unified citizen portal",
+          "Vision 2030 compliance",
+          "Inter-agency integration"
+        ]
       },
       {
         "slug": "oil-gas",
@@ -308,7 +487,12 @@
           "Siloed operational data limiting visibility"
         ],
         "solutions": "From asset management and risk governance to field service automation and compliance tracking, our solutions help oil and gas organizations operate with greater efficiency, safety, and regulatory confidence.",
-        "benefits": ["100% audit readiness", "Asset lifecycle visibility", "Risk governance platform", "Operational efficiency gains"]
+        "benefits": [
+          "100% audit readiness",
+          "Asset lifecycle visibility",
+          "Risk governance platform",
+          "Operational efficiency gains"
+        ]
       },
       {
         "slug": "healthcare",
@@ -321,7 +505,12 @@
           "Compliance and data security requirements"
         ],
         "solutions": "We implement ServiceNow HRSD, CSM, and asset management for healthcare organizations — automating workflows from patient intake to staff management, reducing administrative burden, and improving clinical outcomes.",
-        "benefits": ["3x staff productivity", "Automated patient workflows", "Regulatory compliance", "Improved staff retention"]
+        "benefits": [
+          "3x staff productivity",
+          "Automated patient workflows",
+          "Regulatory compliance",
+          "Improved staff retention"
+        ]
       },
       {
         "slug": "banking-finance",
@@ -334,7 +523,12 @@
           "Fragmented risk management and reporting"
         ],
         "solutions": "We help financial institutions implement ServiceNow GRC, ITSM, and customer workflows to automate compliance processes, improve risk visibility, and deliver superior customer service experiences.",
-        "benefits": ["Automated compliance reporting", "Reduced operational risk", "Improved CX scores", "Audit-ready governance"]
+        "benefits": [
+          "Automated compliance reporting",
+          "Reduced operational risk",
+          "Improved CX scores",
+          "Audit-ready governance"
+        ]
       },
       {
         "slug": "telecom",
@@ -347,7 +541,12 @@
           "Customer experience degradation during service disruptions"
         ],
         "solutions": "Our telecom solutions combine ITSM, ITOM, and AIOps to reduce MTTR, automate network event management, and deliver proactive operations that protect service quality at scale.",
-        "benefits": ["42% reduction in MTTR", "AIOps-driven operations", "Customer SLA protection", "Network visibility"]
+        "benefits": [
+          "42% reduction in MTTR",
+          "AIOps-driven operations",
+          "Customer SLA protection",
+          "Network visibility"
+        ]
       },
       {
         "slug": "retail-logistics",
@@ -360,7 +559,12 @@
           "Customer service inconsistency impacting loyalty"
         ],
         "solutions": "From inventory and asset management to customer service workflows and employee HR portals, we help retail and logistics organizations build digital operations that scale efficiently.",
-        "benefits": ["Improved fulfillment accuracy", "Workforce optimization", "Unified customer service", "Cost reduction"]
+        "benefits": [
+          "Improved fulfillment accuracy",
+          "Workforce optimization",
+          "Unified customer service",
+          "Cost reduction"
+        ]
       },
       {
         "slug": "enterprise-technology",
@@ -373,7 +577,12 @@
           "Technical debt accumulation slowing innovation"
         ],
         "solutions": "We help technology enterprises optimize ServiceNow platform health, implement DevOps workflows, and build automation that accelerates delivery and reduces operational friction.",
-        "benefits": ["Faster release cycles", "Platform optimization", "Reduced technical debt", "DevOps automation"]
+        "benefits": [
+          "Faster release cycles",
+          "Platform optimization",
+          "Reduced technical debt",
+          "DevOps automation"
+        ]
       }
     ]
   },
@@ -390,37 +599,73 @@
         "title": "ServiceNow Center of Excellence",
         "icon": "Award",
         "desc": "Establish an internal ServiceNow CoE that drives governance, accelerates adoption, and maximizes platform ROI across your organization.",
-        "features": ["Platform governance framework", "Center of excellence operating model", "Training and certification programs", "Internal demand management", "Continuous improvement framework"]
+        "features": [
+          "Platform governance framework",
+          "Center of excellence operating model",
+          "Training and certification programs",
+          "Internal demand management",
+          "Continuous improvement framework"
+        ]
       },
       {
         "title": "Digital Transformation Accelerator",
         "icon": "Rocket",
         "desc": "A structured transformation program that moves organizations from fragmented operations to integrated digital ecosystems — fast.",
-        "features": ["Current-state assessment", "Transformation roadmap", "Quick-win implementation sprints", "Change management program", "Value tracking dashboard"]
+        "features": [
+          "Current-state assessment",
+          "Transformation roadmap",
+          "Quick-win implementation sprints",
+          "Change management program",
+          "Value tracking dashboard"
+        ]
       },
       {
         "title": "Vision 2030 Digital Platform",
         "icon": "Globe",
         "desc": "Purpose-built solution for Saudi government and enterprise entities aligning digital operations with Vision 2030 mandates and national transformation goals.",
-        "features": ["Arabic-first platform design", "Government workflow templates", "Bilingual service portals", "Compliance and reporting", "National data residency"]
+        "features": [
+          "Arabic-first platform design",
+          "Government workflow templates",
+          "Bilingual service portals",
+          "Compliance and reporting",
+          "National data residency"
+        ]
       },
       {
         "title": "Enterprise ITSM Transformation",
         "icon": "Settings",
         "desc": "End-to-end ITSM modernization that transforms reactive IT operations into a structured, measurable, business-aligned service organization.",
-        "features": ["ITSM process redesign", "ServiceNow ITSM implementation", "Service catalog development", "SLA framework", "Performance dashboards"]
+        "features": [
+          "ITSM process redesign",
+          "ServiceNow ITSM implementation",
+          "Service catalog development",
+          "SLA framework",
+          "Performance dashboards"
+        ]
       },
       {
         "title": "AIOps & Intelligent Automation",
         "icon": "Brain",
         "desc": "Leverage AI and automation to predict problems before they occur, automate resolution, and scale operations without scaling headcount.",
-        "features": ["Event correlation and AIOps", "Virtual agent deployment", "Predictive analytics", "Workflow automation", "Performance optimization"]
+        "features": [
+          "Event correlation and AIOps",
+          "Virtual agent deployment",
+          "Predictive analytics",
+          "Workflow automation",
+          "Performance optimization"
+        ]
       },
       {
         "title": "Managed ServiceNow Platform",
         "icon": "Shield",
         "desc": "A complete managed service delivering platform stability, continuous enhancement, and strategic optimization across your ServiceNow ecosystem.",
-        "features": ["24/7 proactive monitoring", "Incident and change management", "Quarterly enhancement releases", "Platform health reviews", "Upgrade management"]
+        "features": [
+          "24/7 proactive monitoring",
+          "Incident and change management",
+          "Quarterly enhancement releases",
+          "Platform health reviews",
+          "Upgrade management"
+        ]
       }
     ]
   },
@@ -435,10 +680,22 @@
     "badgeEyebrow": "Vision 2030 Aligned",
     "badgeLabel": "Trusted Partner",
     "items": [
-      { "title": "Proven Expertise", "desc": "100+ successful ServiceNow projects delivered globally with measurable outcomes." },
-      { "title": "Global Standards, Local Advantage", "desc": "World-class delivery methodology paired with deep understanding of the KSA market." },
-      { "title": "Saudi-led Team", "desc": "Local leadership and certified ServiceNow experts who understand your context." },
-      { "title": "Secure & Compliant", "desc": "Built with security, compliance, and governance principles at the core." }
+      {
+        "title": "Proven Expertise",
+        "desc": "100+ successful ServiceNow projects delivered globally with measurable outcomes."
+      },
+      {
+        "title": "Global Standards, Local Advantage",
+        "desc": "World-class delivery methodology paired with deep understanding of the KSA market."
+      },
+      {
+        "title": "Saudi-led Team",
+        "desc": "Local leadership and certified ServiceNow experts who understand your context."
+      },
+      {
+        "title": "Secure & Compliant",
+        "desc": "Built with security, compliance, and governance principles at the core."
+      }
     ]
   },
   "cases": {
@@ -451,10 +708,30 @@
     "solution": "Solution",
     "outcome": "Outcome",
     "items": [
-      { "industry": "Government", "challenge": "Fragmented citizen services across ministries", "solution": "Unified ServiceNow citizen portal with bilingual workflows", "outcome": "60% faster service delivery" },
-      { "industry": "Telecom", "challenge": "Reactive incident management at national scale", "solution": "AIOps + ITSM transformation across the operating stack", "outcome": "42% reduction in MTTR" },
-      { "industry": "Healthcare", "challenge": "Manual patient & asset workflows in major hospitals", "solution": "End-to-end HRSD, CSM and asset automation", "outcome": "3x staff productivity" },
-      { "industry": "Energy", "challenge": "Siloed enterprise risk and compliance reporting", "solution": "Integrated GRC, SecOps and operational risk platform", "outcome": "100% audit readiness" }
+      {
+        "industry": "Government",
+        "challenge": "Fragmented citizen services across ministries",
+        "solution": "Unified ServiceNow citizen portal with bilingual workflows",
+        "outcome": "60% faster service delivery"
+      },
+      {
+        "industry": "Telecom",
+        "challenge": "Reactive incident management at national scale",
+        "solution": "AIOps + ITSM transformation across the operating stack",
+        "outcome": "42% reduction in MTTR"
+      },
+      {
+        "industry": "Healthcare",
+        "challenge": "Manual patient & asset workflows in major hospitals",
+        "solution": "End-to-end HRSD, CSM and asset automation",
+        "outcome": "3x staff productivity"
+      },
+      {
+        "industry": "Energy",
+        "challenge": "Siloed enterprise risk and compliance reporting",
+        "solution": "Integrated GRC, SecOps and operational risk platform",
+        "outcome": "100% audit readiness"
+      }
     ]
   },
   "about": {
@@ -470,19 +747,55 @@
     "valuesTitle": "Our Core Values",
     "valuesSubtitle": "The principles that define how we work, engage, and deliver.",
     "values": [
-      { "title": "Business-First Thinking", "desc": "Every technology initiative begins with understanding the client's business goals, operational challenges, and transformation priorities.", "icon": "Target" },
-      { "title": "Excellence in Delivery", "desc": "We prioritize precision, quality, and sustainable outcomes across consulting, implementation, and support.", "icon": "Award" },
-      { "title": "Accountability", "desc": "From strategy through execution, we take full ownership of results and commitments.", "icon": "Shield" },
-      { "title": "Agility", "desc": "We adapt quickly to changing business environments, evolving technologies, and emerging opportunities.", "icon": "Zap" },
-      { "title": "Innovation with Purpose", "desc": "We focus on practical innovation that creates operational improvements and strategic business value.", "icon": "Lightbulb" },
-      { "title": "Partnership Mindset", "desc": "We work alongside our clients as trusted advisors, collaborators, and long-term growth partners.", "icon": "Handshake" }
+      {
+        "title": "Business-First Thinking",
+        "desc": "Every technology initiative begins with understanding the client's business goals, operational challenges, and transformation priorities.",
+        "icon": "Target"
+      },
+      {
+        "title": "Excellence in Delivery",
+        "desc": "We prioritize precision, quality, and sustainable outcomes across consulting, implementation, and support.",
+        "icon": "Award"
+      },
+      {
+        "title": "Accountability",
+        "desc": "From strategy through execution, we take full ownership of results and commitments.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Agility",
+        "desc": "We adapt quickly to changing business environments, evolving technologies, and emerging opportunities.",
+        "icon": "Zap"
+      },
+      {
+        "title": "Innovation with Purpose",
+        "desc": "We focus on practical innovation that creates operational improvements and strategic business value.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Partnership Mindset",
+        "desc": "We work alongside our clients as trusted advisors, collaborators, and long-term growth partners.",
+        "icon": "Handshake"
+      }
     ],
     "statsTitle": "Aldiratech by the Numbers",
     "stats": [
-      { "value": "100+", "label": "Projects Delivered" },
-      { "value": "2018", "label": "Founded" },
-      { "value": "8", "label": "Industries Served" },
-      { "value": "4", "label": "Continents" }
+      {
+        "value": "100+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "2018",
+        "label": "Founded"
+      },
+      {
+        "value": "8",
+        "label": "Industries Served"
+      },
+      {
+        "value": "4",
+        "label": "Continents"
+      }
     ],
     "philosophyTitle": "Our Leadership Philosophy",
     "philosophyBody": "At Aldiratech, leadership is defined by accountability, not authority. Our senior consultants and delivery leads take personal ownership of client outcomes — from the first discovery workshop to the final go-live. We believe the best results come from teams who combine global expertise with local understanding, and who measure success by client outcomes rather than project milestones.",
@@ -534,46 +847,106 @@
       {
         "title": "About Aldiratech",
         "items": [
-          { "q": "What is Aldiratech?", "a": "Aldiratech is a Saudi-led technology consulting and digital transformation company specializing in ServiceNow implementation, enterprise workflow automation, and operational modernization. We serve government, enterprise, and Vision 2030-aligned organizations across Saudi Arabia and globally." },
-          { "q": "Where is Aldiratech based?", "a": "Our headquarters is in Riyadh, Saudi Arabia. We serve clients across the GCC, UK, and globally through our K2 Partnering network and global delivery capabilities." },
-          { "q": "Is Aldiratech a certified ServiceNow partner?", "a": "Yes. Aldiratech operates as part of the K2 Partnering ecosystem, working with certified ServiceNow professionals across all major platform modules including ITSM, ITOM, HRSD, CSM, GRC, and SecOps." },
-          { "q": "What makes Aldiratech different from other IT consultancies?", "a": "We combine Saudi-led local expertise with global delivery capability. Our consultants understand the regulatory, cultural, and operational context of the Kingdom, and we measure success by client business outcomes — not just project completion." },
-          { "q": "Do you work with both government and private sector clients?", "a": "Yes. We have deep experience serving government entities, public sector organizations, and private enterprise across sectors including telecom, healthcare, oil and gas, banking, and retail." }
+          {
+            "q": "What is Aldiratech?",
+            "a": "Aldiratech is a Saudi-led technology consulting and digital transformation company specializing in ServiceNow implementation, enterprise workflow automation, and operational modernization. We serve government, enterprise, and Vision 2030-aligned organizations across Saudi Arabia and globally."
+          },
+          {
+            "q": "Where is Aldiratech based?",
+            "a": "Our headquarters is in Riyadh, Saudi Arabia. We serve clients across the GCC, UK, and globally through our K2 Partnering network and global delivery capabilities."
+          },
+          {
+            "q": "Is Aldiratech a certified ServiceNow partner?",
+            "a": "Yes. Aldiratech operates as part of the K2 Partnering ecosystem, working with certified ServiceNow professionals across all major platform modules including ITSM, ITOM, HRSD, CSM, GRC, and SecOps."
+          },
+          {
+            "q": "What makes Aldiratech different from other IT consultancies?",
+            "a": "We combine Saudi-led local expertise with global delivery capability. Our consultants understand the regulatory, cultural, and operational context of the Kingdom, and we measure success by client business outcomes — not just project completion."
+          },
+          {
+            "q": "Do you work with both government and private sector clients?",
+            "a": "Yes. We have deep experience serving government entities, public sector organizations, and private enterprise across sectors including telecom, healthcare, oil and gas, banking, and retail."
+          }
         ]
       },
       {
         "title": "ServiceNow Expertise",
         "items": [
-          { "q": "Which ServiceNow modules do you implement?", "a": "We implement across the full ServiceNow platform including ITSM, ITOM, HRSD, CSM, GRC, SecOps, App Engine, and more. Our team holds certifications across all major modules." },
-          { "q": "Can you help us upgrade our existing ServiceNow environment?", "a": "Absolutely. We provide full upgrade management services including pre-upgrade assessment, custom scope impact analysis, testing, and go-live support." },
-          { "q": "Do you offer ServiceNow licensing advice?", "a": "Yes. As part of our consulting engagement, we help clients understand their licensing requirements, optimize their current entitlements, and plan for future platform growth." },
-          { "q": "Can you build custom applications on ServiceNow?", "a": "Yes. Our platform development team builds custom ServiceNow applications, portals, workflows, and integrations engineered to your specific operating model and requirements." },
-          { "q": "Do you support bilingual Arabic/English ServiceNow deployments?", "a": "Yes. This is a core competency. We deliver fully bilingual ServiceNow implementations with Arabic-first design, RTL support, and bilingual service portals and workflows." }
+          {
+            "q": "Which ServiceNow modules do you implement?",
+            "a": "We implement across the full ServiceNow platform including ITSM, ITOM, HRSD, CSM, GRC, SecOps, App Engine, and more. Our team holds certifications across all major modules."
+          },
+          {
+            "q": "Can you help us upgrade our existing ServiceNow environment?",
+            "a": "Absolutely. We provide full upgrade management services including pre-upgrade assessment, custom scope impact analysis, testing, and go-live support."
+          },
+          {
+            "q": "Do you offer ServiceNow licensing advice?",
+            "a": "Yes. As part of our consulting engagement, we help clients understand their licensing requirements, optimize their current entitlements, and plan for future platform growth."
+          },
+          {
+            "q": "Can you build custom applications on ServiceNow?",
+            "a": "Yes. Our platform development team builds custom ServiceNow applications, portals, workflows, and integrations engineered to your specific operating model and requirements."
+          },
+          {
+            "q": "Do you support bilingual Arabic/English ServiceNow deployments?",
+            "a": "Yes. This is a core competency. We deliver fully bilingual ServiceNow implementations with Arabic-first design, RTL support, and bilingual service portals and workflows."
+          }
         ]
       },
       {
         "title": "Implementation Process",
         "items": [
-          { "q": "How long does a ServiceNow implementation typically take?", "a": "Timeline varies by scope. A focused ITSM implementation can be completed in 8–12 weeks. Larger multi-module programs typically run 3–9 months depending on complexity, integrations, and organizational readiness." },
-          { "q": "What does your implementation methodology look like?", "a": "We follow a structured four-phase approach: Discovery & Blueprint, Build & Configure, Test & Validate, and Deploy & Adopt. Each phase includes defined milestones, deliverables, and governance checkpoints." },
-          { "q": "Do you handle change management as part of implementation?", "a": "Yes. Change management is embedded in every implementation — from stakeholder alignment and communication planning to training, user adoption programs, and post-go-live support." },
-          { "q": "What happens after go-live?", "a": "We offer comprehensive post-go-live support including hypercare periods, issue resolution, optimization reviews, and transition to our managed services if required." }
+          {
+            "q": "How long does a ServiceNow implementation typically take?",
+            "a": "Timeline varies by scope. A focused ITSM implementation can be completed in 8–12 weeks. Larger multi-module programs typically run 3–9 months depending on complexity, integrations, and organizational readiness."
+          },
+          {
+            "q": "What does your implementation methodology look like?",
+            "a": "We follow a structured four-phase approach: Discovery & Blueprint, Build & Configure, Test & Validate, and Deploy & Adopt. Each phase includes defined milestones, deliverables, and governance checkpoints."
+          },
+          {
+            "q": "Do you handle change management as part of implementation?",
+            "a": "Yes. Change management is embedded in every implementation — from stakeholder alignment and communication planning to training, user adoption programs, and post-go-live support."
+          },
+          {
+            "q": "What happens after go-live?",
+            "a": "We offer comprehensive post-go-live support including hypercare periods, issue resolution, optimization reviews, and transition to our managed services if required."
+          }
         ]
       },
       {
         "title": "Managed Services",
         "items": [
-          { "q": "What does your Managed Services offering include?", "a": "Our Managed Services provides platform monitoring, incident and change management, enhancement delivery, upgrade support, performance reviews, and strategic platform advisory — all delivered by bilingual ServiceNow experts." },
-          { "q": "What SLAs do you offer for managed services?", "a": "We offer tiered SLA models including 24/7 coverage with defined response and resolution times based on incident priority. Our standard managed service targets 99.9% platform availability." },
-          { "q": "Can we start managed services after implementation?", "a": "Yes. Many clients transition directly from implementation to managed services. We also onboard organizations whose ServiceNow environments were implemented by other partners." }
+          {
+            "q": "What does your Managed Services offering include?",
+            "a": "Our Managed Services provides platform monitoring, incident and change management, enhancement delivery, upgrade support, performance reviews, and strategic platform advisory — all delivered by bilingual ServiceNow experts."
+          },
+          {
+            "q": "What SLAs do you offer for managed services?",
+            "a": "We offer tiered SLA models including 24/7 coverage with defined response and resolution times based on incident priority. Our standard managed service targets 99.9% platform availability."
+          },
+          {
+            "q": "Can we start managed services after implementation?",
+            "a": "Yes. Many clients transition directly from implementation to managed services. We also onboard organizations whose ServiceNow environments were implemented by other partners."
+          }
         ]
       },
       {
         "title": "Talent Solutions",
         "items": [
-          { "q": "What types of ServiceNow professionals do you provide?", "a": "We provide certified ServiceNow developers, architects, ITSM consultants, HRSD specialists, platform administrators, and business analysts — across both project-based and staff augmentation models." },
-          { "q": "Do your talent solutions include knowledge transfer?", "a": "Yes. We build knowledge transfer into every talent engagement to ensure client teams develop internal capability alongside our specialists." },
-          { "q": "Can you support both short-term and long-term talent needs?", "a": "Yes. We offer flexible engagement models from short-term project support to dedicated long-term resource teams embedded in your organization." }
+          {
+            "q": "What types of ServiceNow professionals do you provide?",
+            "a": "We provide certified ServiceNow developers, architects, ITSM consultants, HRSD specialists, platform administrators, and business analysts — across both project-based and staff augmentation models."
+          },
+          {
+            "q": "Do your talent solutions include knowledge transfer?",
+            "a": "Yes. We build knowledge transfer into every talent engagement to ensure client teams develop internal capability alongside our specialists."
+          },
+          {
+            "q": "Can you support both short-term and long-term talent needs?",
+            "a": "Yes. We offer flexible engagement models from short-term project support to dedicated long-term resource teams embedded in your organization."
+          }
         ]
       }
     ]
@@ -591,7 +964,13 @@
     "office": "Riyadh Office",
     "address": "King Fahd Rd, Al Olaya, Riyadh 12212, Saudi Arabia",
     "certs": "Certifications",
-    "certsList": ["ServiceNow Elite", "ISO 27001 / 9001", "ITIL Foundation", "PRINCE2", "SAFe Partner"],
+    "certsList": [
+      "ServiceNow Elite",
+      "ISO 27001 / 9001",
+      "ITIL Foundation",
+      "PRINCE2",
+      "SAFe Partner"
+    ],
     "stay": "Stay Connected",
     "stayDesc": "Insights, updates and best practices, delivered to your inbox.",
     "emailPlaceholder": "Enter your email",
@@ -600,12 +979,31 @@
     "terms": "Terms of Use",
     "links": {
       "company": "Company",
-      "companyLinks": ["About Us", "Our Values", "Vision 2030 Alignment", "Contact"],
+      "companyLinks": [
+        "About Us",
+        "Our Values",
+        "Vision 2030 Alignment",
+        "Contact"
+      ],
       "services": "Services",
-      "servicesLinks": ["ServiceNow Consulting", "Implementation", "ITSM", "Managed Services"],
+      "servicesLinks": [
+        "ServiceNow Consulting",
+        "Implementation",
+        "ITSM",
+        "Managed Services"
+      ],
       "industries": "Industries",
-      "industriesLinks": ["Government", "Oil & Gas", "Healthcare", "Telecom"]
+      "industriesLinks": [
+        "Government",
+        "Oil & Gas",
+        "Healthcare",
+        "Telecom"
+      ]
     }
   },
-  "theme": { "light": "Light", "dark": "Dark", "system": "System" }
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
 }
