@@ -25,9 +25,9 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/aldiratech-website:latest
           build-args: |
-            VITE_GITHUB_OWNER=${{ secrets.GH_OWNER }}
-            VITE_GITHUB_REPO=${{ secrets.GH_REPO }}
-            VITE_GITHUB_WEBHOOK_SECRET=${{ secrets.GH_WEBHOOK_SECRET }}
+            VITE_GH_OWNER=${{ secrets.GH_OWNER }}
+            VITE_GH_REPO=${{ secrets.GH_REPO }}
+            VITE_GH_WEBHOOK_SECRET=${{ secrets.GH_WEBHOOK_SECRET }}
 
       - name: Deploy to Server
         uses: appleboy/ssh-action@master
@@ -43,9 +43,9 @@ jobs:
               --name aldiratech-website \
               --restart unless-stopped \
               --network zivelogin-network-prod \
-              -p 3001:80 \
-              -e VITE_GITHUB_OWNER="${{ secrets.GH_OWNER }}" \
-              -e VITE_GITHUB_REPO="${{ secrets.GH_REPO }}" \
-              -e VITE_GITHUB_WEBHOOK_SECRET="${{ secrets.GH_WEBHOOK_SECRET }}" \
+              -p 3005:80 \
+              -e VITE_GH_OWNER="${{ secrets.GH_OWNER }}" \
+              -e VITE_GH_REPO="${{ secrets.GH_REPO }}" \
+              -e VITE_GH_WEBHOOK_SECRET="${{ secrets.GH_WEBHOOK_SECRET }}" \
               ${{ secrets.DOCKERHUB_USERNAME }}/aldiratech-website:latest
             docker image prune -f
