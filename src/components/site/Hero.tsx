@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Clock, Languages, Sparkles, } from "lucide-react";
 import heroImg from "@/assets/hero-riyadh.jpg";
+import heroLogo from "@/assets/Hero_img.png";
 import { useLanguage } from "@/context/LanguageContext";
 
 const featureIcons = [MapPin, Clock, Languages];
@@ -20,7 +21,7 @@ export const Hero = () => {
     <div
       className="absolute inset-0"
       style={{
-        backgroundImage: `url(${heroImg})`,
+        backgroundImage: `url(${heroLogo})`,
         backgroundSize: 'cover',
         backgroundPosition: 'right center',
         backgroundAttachment: 'fixed',

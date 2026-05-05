@@ -1,0 +1,611 @@
+{
+  "meta": {
+    "title": "Aldiratech | ServiceNow Experts in Saudi Arabia",
+    "description": "Saudi-led, globally connected ServiceNow implementation and digital transformation experts. Riyadh-based, Vision 2030 aligned."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "industries": "Industries",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "cta": "Talk to an Expert"
+  },
+  "hero": {
+    "badge": "Saudi-led. Globally Connected.",
+    "titleA": "Global Expertise.",
+    "titleB": "Delivered",
+    "titleHighlight": "Locally",
+    "subtitle": "An official K2 Partnering company delivering world-class ServiceNow implementation, digital transformation, and enterprise workflow solutions across Saudi Arabia and beyond.",
+    "ctaPrimary": "Talk to a Saudi-based Expert",
+    "ctaSecondary": "See Global Case Studies",
+    "features": [
+      { "title": "Local Presence", "desc": "On-ground experts across Saudi Arabia for rapid delivery." },
+      { "title": "24/7 Support", "desc": "Always-on operations ensuring continuity and trust." },
+      { "title": "Bilingual Team", "desc": "Seamless English & Arabic engagement across teams." }
+    ],
+    "cities": { "riyadh": "Riyadh HQ", "london": "London", "dubai": "Dubai", "ny": "New York" },
+    "stats": [
+      { "value": "100+", "label": "Projects" },
+      { "value": "24/7", "label": "Support" },
+      { "value": "4", "label": "Continents" }
+    ],
+    "imageAlt": "Riyadh skyline with global delivery network"
+  },
+  "trust": {
+    "eyebrow": "Trusted by Government, Enterprise & Vision 2030 Leaders",
+    "partners": ["K2 Partnering", "Vision 2030", "ServiceNow Elite", "SABIC", "STC", "Ministry of Health"]
+  },
+  "services": {
+    "eyebrow": "Our Capabilities",
+    "titleA": "End-to-End ServiceNow",
+    "titleB": "Implementation Excellence",
+    "subtitle": "From strategy to managed services, we deliver every layer of the ServiceNow value chain with Saudi precision and global rigor.",
+    "learnMore": "Learn more",
+    "heroBadge": "ServiceNow Expertise",
+    "heroTitle": "Enterprise Solutions Built for Transformation",
+    "heroSubtitle": "Every service we offer is engineered to align technology with business outcomes — delivering measurable value at every stage of your digital journey.",
+    "items": [
+      {
+        "slug": "servicenow-consulting",
+        "title": "ServiceNow Consulting",
+        "desc": "Align ServiceNow investments with enterprise vision and Saudi Vision 2030 priorities.",
+        "icon": "Compass",
+        "challenge": "Organizations struggle to extract full value from ServiceNow without a clear platform strategy aligned to business goals.",
+        "challenges": [
+          "Unclear platform roadmap and investment priorities",
+          "Misalignment between IT capabilities and business outcomes",
+          "Lack of internal ServiceNow expertise and governance"
+        ],
+        "overview": "Our ServiceNow consulting practice helps organizations define, plan, and execute a strategic ServiceNow roadmap. We assess your current state, identify transformation opportunities, and create a clear path from fragmented operations to an integrated digital enterprise.",
+        "outcomes": [
+          "Clear platform strategy aligned to business priorities",
+          "Defined ROI metrics and value realization plan",
+          "Governance framework for sustainable growth",
+          "Executive alignment and stakeholder buy-in"
+        ],
+        "process": [
+          { "step": "1", "title": "Discovery", "desc": "Assess current platform maturity, gaps, and business goals." },
+          { "step": "2", "title": "Strategy", "desc": "Define roadmap, priorities, and investment plan." },
+          { "step": "3", "title": "Design", "desc": "Blueprint the solution architecture and governance model." },
+          { "step": "4", "title": "Enablement", "desc": "Equip teams and leadership to drive adoption." }
+        ]
+      },
+      {
+        "slug": "implementation-integration",
+        "title": "Implementation & Integration",
+        "desc": "Secure, scalable rollouts across ITSM, ITOM, HRSD, CSM, and SecOps.",
+        "icon": "Layers",
+        "challenge": "Poorly executed implementations create technical debt, low adoption, and failed ROI on expensive platform investments.",
+        "challenges": [
+          "Complex legacy system integrations causing delays",
+          "Low user adoption due to poor change management",
+          "Over-customization creating upgrade obstacles"
+        ],
+        "overview": "Aldiratech delivers structured, risk-managed ServiceNow implementations using a proven methodology that ensures on-time delivery, seamless integrations, and high adoption rates. We configure, customize, and integrate ServiceNow across your enterprise ecosystem.",
+        "outcomes": [
+          "On-time, on-budget deployments with minimal disruption",
+          "Seamless integration with existing enterprise systems",
+          "High user adoption through embedded change management",
+          "Future-proof architecture with upgrade-ready configurations"
+        ],
+        "process": [
+          { "step": "1", "title": "Blueprint", "desc": "Define scope, architecture, and integration points." },
+          { "step": "2", "title": "Build", "desc": "Configure, customize, and integrate the platform." },
+          { "step": "3", "title": "Test", "desc": "Comprehensive QA, UAT, and performance validation." },
+          { "step": "4", "title": "Deploy", "desc": "Go-live with full change management support." }
+        ]
+      },
+      {
+        "slug": "itsm",
+        "title": "IT Service Management",
+        "desc": "Transform IT operations with structured incident, change, and problem management.",
+        "icon": "Settings",
+        "challenge": "Reactive IT operations, unresolved incidents, and manual service desk processes drag down productivity and erode trust.",
+        "challenges": [
+          "High incident volumes with slow resolution times",
+          "Manual, inconsistent service desk operations",
+          "Lack of visibility into IT performance and SLAs"
+        ],
+        "overview": "Our ITSM practice modernizes how your IT organization delivers, manages, and measures services. From incident and change management to service catalog and CMDB, we build structured operations that restore confidence and improve business outcomes.",
+        "outcomes": [
+          "Reduced MTTR and incident resolution times",
+          "Structured change management with lower risk",
+          "Self-service adoption reducing service desk load",
+          "Real-time visibility into IT health and SLA compliance"
+        ],
+        "process": [
+          { "step": "1", "title": "Assess", "desc": "Evaluate current ITSM maturity and pain points." },
+          { "step": "2", "title": "Design", "desc": "Define service model, workflows, and SLA targets." },
+          { "step": "3", "title": "Implement", "desc": "Deploy and configure ITSM modules." },
+          { "step": "4", "title": "Optimize", "desc": "Tune performance and drive continuous improvement." }
+        ]
+      },
+      {
+        "slug": "itom",
+        "title": "IT Operations Management",
+        "desc": "Gain full visibility into infrastructure and proactively prevent outages.",
+        "icon": "Activity",
+        "challenge": "Without unified infrastructure visibility, IT teams react to outages rather than preventing them — increasing downtime and business risk.",
+        "challenges": [
+          "Blind spots across cloud, on-prem, and hybrid environments",
+          "Reactive incident response with no predictive capability",
+          "Disconnected monitoring tools creating operational silos"
+        ],
+        "overview": "Aldiratech's ITOM practice delivers comprehensive infrastructure visibility, event management, and AIOps capabilities on ServiceNow. We help organizations shift from reactive to proactive operations — reducing outages, accelerating resolution, and protecting business continuity.",
+        "outcomes": [
+          "Complete infrastructure visibility across all environments",
+          "Proactive event correlation and intelligent alerting",
+          "Reduced MTTD and MTTR through AIOps",
+          "Lower operational risk and improved business continuity"
+        ],
+        "process": [
+          { "step": "1", "title": "Discover", "desc": "Map all infrastructure assets and dependencies." },
+          { "step": "2", "title": "Monitor", "desc": "Implement event management and health monitoring." },
+          { "step": "3", "title": "Correlate", "desc": "Enable AIOps for intelligent event correlation." },
+          { "step": "4", "title": "Automate", "desc": "Deploy remediation automation and runbooks." }
+        ]
+      },
+      {
+        "slug": "hrsd",
+        "title": "HR Service Delivery",
+        "desc": "Transform employee experiences with modern HR workflows and self-service portals.",
+        "icon": "Users",
+        "challenge": "Fragmented HR systems and manual processes create poor employee experiences, slow onboarding, and compliance risks.",
+        "challenges": [
+          "Disconnected HR systems causing data inconsistency",
+          "Manual onboarding processes delaying productivity",
+          "Low employee satisfaction with HR services"
+        ],
+        "overview": "We implement ServiceNow HRSD to modernize how HR teams deliver services across the employee lifecycle. From onboarding to offboarding, case management to employee self-service, our solutions improve HR efficiency and transform the employee experience.",
+        "outcomes": [
+          "Streamlined onboarding reducing time-to-productivity",
+          "Self-service portal reducing HR case volume by 40%+",
+          "Consistent, compliant HR case management",
+          "Improved employee satisfaction scores"
+        ],
+        "process": [
+          { "step": "1", "title": "Audit", "desc": "Review current HR processes and system landscape." },
+          { "step": "2", "title": "Design", "desc": "Map employee journeys and service catalog." },
+          { "step": "3", "title": "Build", "desc": "Implement HRSD modules and self-service portal." },
+          { "step": "4", "title": "Adopt", "desc": "Drive HR team and employee adoption." }
+        ]
+      },
+      {
+        "slug": "managed-services",
+        "title": "Managed Services & Support",
+        "desc": "Proactive 24/7 operations with bilingual experts you can trust.",
+        "icon": "Shield",
+        "challenge": "Most organizations lack internal capacity to maintain, optimize, and scale their ServiceNow platform long-term.",
+        "challenges": [
+          "Platform drift and technical debt accumulation",
+          "Insufficient internal expertise for optimization",
+          "Reactive support causing business disruption"
+        ],
+        "overview": "Aldiratech's Managed Services model provides ongoing platform stewardship — from proactive monitoring and incident management to enhancements, upgrades, and optimization. Our bilingual team operates around the clock to ensure your ServiceNow investment delivers continuous value.",
+        "outcomes": [
+          "Platform stability with 99.9% uptime SLA",
+          "Continuous optimization and enhancement delivery",
+          "Proactive issue identification before business impact",
+          "Predictable cost model for IT operations"
+        ],
+        "process": [
+          { "step": "1", "title": "Onboard", "desc": "Knowledge transfer and environment assessment." },
+          { "step": "2", "title": "Stabilize", "desc": "Resolve existing issues and establish baseline." },
+          { "step": "3", "title": "Optimize", "desc": "Continuous improvement and enhancement delivery." },
+          { "step": "4", "title": "Evolve", "desc": "Strategic platform roadmap and capability expansion." }
+        ]
+      },
+      {
+        "slug": "ai-automation",
+        "title": "AI & Automation",
+        "desc": "Deploy intelligent automation that reduces manual work and accelerates enterprise operations.",
+        "icon": "Zap",
+        "challenge": "Manual processes, repetitive tasks, and reactive operations constrain organizational productivity and scalability.",
+        "challenges": [
+          "High manual effort in routine IT and business processes",
+          "Slow response times due to human-dependent workflows",
+          "Inability to scale operations without adding headcount"
+        ],
+        "overview": "We help organizations harness AI and intelligent automation within ServiceNow to eliminate manual work, accelerate decision-making, and scale operations efficiently. From virtual agents to predictive analytics and workflow automation, we design AI-powered solutions that create measurable operational impact.",
+        "outcomes": [
+          "40-60% reduction in manual task handling",
+          "Faster incident resolution through AI-assisted triage",
+          "24/7 virtual agent handling tier-1 requests",
+          "Predictive analytics for proactive problem management"
+        ],
+        "process": [
+          { "step": "1", "title": "Identify", "desc": "Map automation opportunities and ROI potential." },
+          { "step": "2", "title": "Design", "desc": "Architect AI and automation workflows." },
+          { "step": "3", "title": "Deploy", "desc": "Implement and test automation solutions." },
+          { "step": "4", "title": "Scale", "desc": "Expand automation coverage and measure impact." }
+        ]
+      },
+      {
+        "slug": "cloud-advisory",
+        "title": "Cloud & Infrastructure Advisory",
+        "desc": "Strategic cloud guidance aligned with your business architecture and Vision 2030 objectives.",
+        "icon": "Cloud",
+        "challenge": "Unstructured cloud adoption creates security gaps, cost overruns, and misalignment between infrastructure and business needs.",
+        "challenges": [
+          "Lack of cloud strategy and governance framework",
+          "Uncontrolled cloud costs and resource sprawl",
+          "Security and compliance risks in hybrid environments"
+        ],
+        "overview": "Our cloud advisory practice helps organizations define and execute cloud strategies that support digital transformation goals. We assess infrastructure readiness, design cloud architectures, and provide governance frameworks that balance agility with security and cost control.",
+        "outcomes": [
+          "Clear cloud strategy aligned to business objectives",
+          "Optimized cloud costs through right-sizing and governance",
+          "Secure, compliant hybrid and multi-cloud environments",
+          "Faster time-to-value for cloud initiatives"
+        ],
+        "process": [
+          { "step": "1", "title": "Assess", "desc": "Evaluate current infrastructure and cloud readiness." },
+          { "step": "2", "title": "Strategize", "desc": "Define cloud architecture and migration roadmap." },
+          { "step": "3", "title": "Govern", "desc": "Establish policies, guardrails, and cost controls." },
+          { "step": "4", "title": "Execute", "desc": "Migrate, optimize, and operate cloud environments." }
+        ]
+      },
+      {
+        "slug": "talent-solutions",
+        "title": "Talent Solutions",
+        "desc": "Access certified ServiceNow professionals and specialist technology talent on demand.",
+        "icon": "GraduationCap",
+        "challenge": "ServiceNow talent is scarce, expensive, and difficult to retain — creating delivery gaps and project delays.",
+        "challenges": [
+          "Shortage of certified ServiceNow professionals in the KSA market",
+          "High cost and risk of full-time specialist hiring",
+          "Capability gaps delaying digital transformation programs"
+        ],
+        "overview": "Aldiratech provides access to a curated network of certified ServiceNow developers, architects, consultants, and ITSM specialists. Whether you need project augmentation, dedicated resource teams, or specialist expertise for short-term engagements, we match the right talent to your needs.",
+        "outcomes": [
+          "Rapid access to certified ServiceNow talent",
+          "Flexible engagement models reducing hiring risk",
+          "Knowledge transfer building internal capability",
+          "Delivery continuity for transformation programs"
+        ],
+        "process": [
+          { "step": "1", "title": "Define", "desc": "Understand role requirements and delivery context." },
+          { "step": "2", "title": "Match", "desc": "Identify and vet the right certified professionals." },
+          { "step": "3", "title": "Engage", "desc": "Onboard resources and integrate with your team." },
+          { "step": "4", "title": "Support", "desc": "Ongoing performance management and delivery oversight." }
+        ]
+      }
+    ]
+  },
+  "industries": {
+    "eyebrow": "Industries We Serve",
+    "titleA": "Solutions Built Around",
+    "titleB": "Industry Realities",
+    "subtitle": "Every sector faces unique operational challenges. Aldiratech delivers ServiceNow and digital transformation solutions tailored to the compliance, service, and operational demands of your industry.",
+    "heroBadge": "Industry Expertise",
+    "heroTitle": "Sector-Specific ServiceNow Solutions",
+    "heroSubtitle": "Deep industry knowledge combined with ServiceNow expertise enables us to deliver transformation that is contextually relevant, operationally practical, and strategically aligned.",
+    "items": [
+      {
+        "slug": "government",
+        "title": "Government & Public Sector",
+        "icon": "Building2",
+        "desc": "Modernize citizen services, streamline inter-agency operations, and meet Vision 2030 digital mandates.",
+        "painPoints": [
+          "Fragmented citizen services across multiple ministries and agencies",
+          "Legacy systems creating operational inefficiencies",
+          "Compliance and governance demands increasing complexity"
+        ],
+        "solutions": "We help government entities unify citizen services on ServiceNow, implement ITSM for shared services, and build digital platforms that reduce bureaucracy and improve public service delivery.",
+        "benefits": ["60% faster service delivery", "Unified citizen portal", "Vision 2030 compliance", "Inter-agency integration"]
+      },
+      {
+        "slug": "oil-gas",
+        "title": "Oil & Gas",
+        "icon": "Flame",
+        "desc": "Manage complex assets, streamline compliance, and modernize field operations across upstream and downstream.",
+        "painPoints": [
+          "Complex asset lifecycle management across dispersed locations",
+          "Stringent regulatory compliance and audit requirements",
+          "Siloed operational data limiting visibility"
+        ],
+        "solutions": "From asset management and risk governance to field service automation and compliance tracking, our solutions help oil and gas organizations operate with greater efficiency, safety, and regulatory confidence.",
+        "benefits": ["100% audit readiness", "Asset lifecycle visibility", "Risk governance platform", "Operational efficiency gains"]
+      },
+      {
+        "slug": "healthcare",
+        "title": "Healthcare",
+        "icon": "HeartPulse",
+        "desc": "Digitize patient workflows, automate clinical operations, and improve staff experiences across healthcare organizations.",
+        "painPoints": [
+          "Manual patient and clinical workflows reducing care quality",
+          "Staff productivity constrained by administrative burden",
+          "Compliance and data security requirements"
+        ],
+        "solutions": "We implement ServiceNow HRSD, CSM, and asset management for healthcare organizations — automating workflows from patient intake to staff management, reducing administrative burden, and improving clinical outcomes.",
+        "benefits": ["3x staff productivity", "Automated patient workflows", "Regulatory compliance", "Improved staff retention"]
+      },
+      {
+        "slug": "banking-finance",
+        "title": "Banking & Financial Services",
+        "icon": "Landmark",
+        "desc": "Manage risk, automate compliance, and transform customer service operations across financial institutions.",
+        "painPoints": [
+          "Heavy regulatory and compliance burden across operations",
+          "Customer service inefficiencies impacting satisfaction",
+          "Fragmented risk management and reporting"
+        ],
+        "solutions": "We help financial institutions implement ServiceNow GRC, ITSM, and customer workflows to automate compliance processes, improve risk visibility, and deliver superior customer service experiences.",
+        "benefits": ["Automated compliance reporting", "Reduced operational risk", "Improved CX scores", "Audit-ready governance"]
+      },
+      {
+        "slug": "telecom",
+        "title": "Telecommunications",
+        "icon": "Radio",
+        "desc": "Scale incident management, automate network operations, and deliver better customer experiences at national scale.",
+        "painPoints": [
+          "High incident volumes requiring rapid national-scale response",
+          "Network operations complexity across infrastructure layers",
+          "Customer experience degradation during service disruptions"
+        ],
+        "solutions": "Our telecom solutions combine ITSM, ITOM, and AIOps to reduce MTTR, automate network event management, and deliver proactive operations that protect service quality at scale.",
+        "benefits": ["42% reduction in MTTR", "AIOps-driven operations", "Customer SLA protection", "Network visibility"]
+      },
+      {
+        "slug": "retail-logistics",
+        "title": "Retail & Logistics",
+        "icon": "ShoppingBag",
+        "desc": "Streamline supply chain operations, automate workforce management, and improve customer service at scale.",
+        "painPoints": [
+          "Supply chain visibility gaps creating fulfillment delays",
+          "Workforce management complexity across distributed locations",
+          "Customer service inconsistency impacting loyalty"
+        ],
+        "solutions": "From inventory and asset management to customer service workflows and employee HR portals, we help retail and logistics organizations build digital operations that scale efficiently.",
+        "benefits": ["Improved fulfillment accuracy", "Workforce optimization", "Unified customer service", "Cost reduction"]
+      },
+      {
+        "slug": "enterprise-technology",
+        "title": "Enterprise Technology",
+        "icon": "Cpu",
+        "desc": "Optimize platform operations, accelerate DevOps, and build scalable digital foundations for technology businesses.",
+        "painPoints": [
+          "Platform complexity limiting operational agility",
+          "DevOps and release management inefficiencies",
+          "Technical debt accumulation slowing innovation"
+        ],
+        "solutions": "We help technology enterprises optimize ServiceNow platform health, implement DevOps workflows, and build automation that accelerates delivery and reduces operational friction.",
+        "benefits": ["Faster release cycles", "Platform optimization", "Reduced technical debt", "DevOps automation"]
+      }
+    ]
+  },
+  "solutions": {
+    "eyebrow": "Our Solutions",
+    "titleA": "Integrated Solutions for",
+    "titleB": "Enterprise Transformation",
+    "subtitle": "Aldiratech delivers packaged enterprise solutions that combine ServiceNow capabilities, consulting expertise, and industry knowledge into outcomes that drive measurable business value.",
+    "heroBadge": "Enterprise Solutions",
+    "heroTitle": "From Strategy to Transformation",
+    "heroSubtitle": "Purpose-built solutions that address complex enterprise challenges across the digital transformation lifecycle.",
+    "items": [
+      {
+        "title": "ServiceNow Center of Excellence",
+        "icon": "Award",
+        "desc": "Establish an internal ServiceNow CoE that drives governance, accelerates adoption, and maximizes platform ROI across your organization.",
+        "features": ["Platform governance framework", "Center of excellence operating model", "Training and certification programs", "Internal demand management", "Continuous improvement framework"]
+      },
+      {
+        "title": "Digital Transformation Accelerator",
+        "icon": "Rocket",
+        "desc": "A structured transformation program that moves organizations from fragmented operations to integrated digital ecosystems — fast.",
+        "features": ["Current-state assessment", "Transformation roadmap", "Quick-win implementation sprints", "Change management program", "Value tracking dashboard"]
+      },
+      {
+        "title": "Vision 2030 Digital Platform",
+        "icon": "Globe",
+        "desc": "Purpose-built solution for Saudi government and enterprise entities aligning digital operations with Vision 2030 mandates and national transformation goals.",
+        "features": ["Arabic-first platform design", "Government workflow templates", "Bilingual service portals", "Compliance and reporting", "National data residency"]
+      },
+      {
+        "title": "Enterprise ITSM Transformation",
+        "icon": "Settings",
+        "desc": "End-to-end ITSM modernization that transforms reactive IT operations into a structured, measurable, business-aligned service organization.",
+        "features": ["ITSM process redesign", "ServiceNow ITSM implementation", "Service catalog development", "SLA framework", "Performance dashboards"]
+      },
+      {
+        "title": "AIOps & Intelligent Automation",
+        "icon": "Brain",
+        "desc": "Leverage AI and automation to predict problems before they occur, automate resolution, and scale operations without scaling headcount.",
+        "features": ["Event correlation and AIOps", "Virtual agent deployment", "Predictive analytics", "Workflow automation", "Performance optimization"]
+      },
+      {
+        "title": "Managed ServiceNow Platform",
+        "icon": "Shield",
+        "desc": "A complete managed service delivering platform stability, continuous enhancement, and strategic optimization across your ServiceNow ecosystem.",
+        "features": ["24/7 proactive monitoring", "Incident and change management", "Quarterly enhancement releases", "Platform health reviews", "Upgrade management"]
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Aldiratech",
+    "titleA": "Why Organizations",
+    "titleB": "Choose",
+    "subtitle": "We combine the precision of global consulting with the cultural insight and accountability of a Saudi-led team.",
+    "heritageA": "Global Expertise,",
+    "heritageB": "Local Delivery",
+    "heritageCaption": "Heritage of trust. Vision of progress.",
+    "badgeEyebrow": "Vision 2030 Aligned",
+    "badgeLabel": "Trusted Partner",
+    "items": [
+      { "title": "Proven Expertise", "desc": "100+ successful ServiceNow projects delivered globally with measurable outcomes." },
+      { "title": "Global Standards, Local Advantage", "desc": "World-class delivery methodology paired with deep understanding of the KSA market." },
+      { "title": "Saudi-led Team", "desc": "Local leadership and certified ServiceNow experts who understand your context." },
+      { "title": "Secure & Compliant", "desc": "Built with security, compliance, and governance principles at the core." }
+    ]
+  },
+  "cases": {
+    "eyebrow": "Case Studies",
+    "titleA": "Outcomes that move",
+    "titleB": "national priorities",
+    "titleC": "forward.",
+    "seeAll": "See all case studies",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "outcome": "Outcome",
+    "items": [
+      { "industry": "Government", "challenge": "Fragmented citizen services across ministries", "solution": "Unified ServiceNow citizen portal with bilingual workflows", "outcome": "60% faster service delivery" },
+      { "industry": "Telecom", "challenge": "Reactive incident management at national scale", "solution": "AIOps + ITSM transformation across the operating stack", "outcome": "42% reduction in MTTR" },
+      { "industry": "Healthcare", "challenge": "Manual patient & asset workflows in major hospitals", "solution": "End-to-end HRSD, CSM and asset automation", "outcome": "3x staff productivity" },
+      { "industry": "Energy", "challenge": "Siloed enterprise risk and compliance reporting", "solution": "Integrated GRC, SecOps and operational risk platform", "outcome": "100% audit readiness" }
+    ]
+  },
+  "about": {
+    "heroBadge": "About Aldiratech",
+    "heroTitle": "Transforming Enterprise Operations from Saudi Arabia to the World",
+    "heroSubtitle": "A forward-focused technology consulting and solutions company built to help organizations modernize operations, optimize service delivery, and accelerate digital transformation.",
+    "storyTitle": "Our Story",
+    "storyBody": "Founded in 2018, Aldiratech was built on a single conviction: successful digital transformation requires more than software deployment. It requires strategic planning, industry expertise, execution discipline, and continuous operational support. From our headquarters in Riyadh, we have grown into a globally connected ServiceNow partner serving government, enterprise, and Vision 2030-aligned organizations across Saudi Arabia and beyond. Every engagement we undertake is guided by the belief that technology should serve people — creating better experiences, stronger operations, and measurable business value.",
+    "missionTitle": "Our Mission",
+    "missionBody": "To provide reliable, business-aligned, and transformation-focused technology services that help organizations modernize service delivery, improve operational efficiency, and create measurable enterprise value through ServiceNow and digital innovation.",
+    "visionTitle": "Our Vision",
+    "visionBody": "To be recognized as the leading ServiceNow and enterprise solutions partner in Saudi Arabia — known for delivering operational excellence, innovation, and long-term business impact through consulting, implementation, and strategic transformation.",
+    "valuesTitle": "Our Core Values",
+    "valuesSubtitle": "The principles that define how we work, engage, and deliver.",
+    "values": [
+      { "title": "Business-First Thinking", "desc": "Every technology initiative begins with understanding the client's business goals, operational challenges, and transformation priorities.", "icon": "Target" },
+      { "title": "Excellence in Delivery", "desc": "We prioritize precision, quality, and sustainable outcomes across consulting, implementation, and support.", "icon": "Award" },
+      { "title": "Accountability", "desc": "From strategy through execution, we take full ownership of results and commitments.", "icon": "Shield" },
+      { "title": "Agility", "desc": "We adapt quickly to changing business environments, evolving technologies, and emerging opportunities.", "icon": "Zap" },
+      { "title": "Innovation with Purpose", "desc": "We focus on practical innovation that creates operational improvements and strategic business value.", "icon": "Lightbulb" },
+      { "title": "Partnership Mindset", "desc": "We work alongside our clients as trusted advisors, collaborators, and long-term growth partners.", "icon": "Handshake" }
+    ],
+    "statsTitle": "Aldiratech by the Numbers",
+    "stats": [
+      { "value": "100+", "label": "Projects Delivered" },
+      { "value": "2018", "label": "Founded" },
+      { "value": "8", "label": "Industries Served" },
+      { "value": "4", "label": "Continents" }
+    ],
+    "philosophyTitle": "Our Leadership Philosophy",
+    "philosophyBody": "At Aldiratech, leadership is defined by accountability, not authority. Our senior consultants and delivery leads take personal ownership of client outcomes — from the first discovery workshop to the final go-live. We believe the best results come from teams who combine global expertise with local understanding, and who measure success by client outcomes rather than project milestones.",
+    "visionAlignTitle": "Aligned with Vision 2030",
+    "visionAlignBody": "Aldiratech is deeply committed to Saudi Arabia's Vision 2030 transformation agenda. Our solutions are designed to support public sector digitization, private sector modernization, and the development of a knowledge-based economy. As a Saudi-led company, we understand the unique regulatory, cultural, and operational context of the Kingdom — and we bring that understanding to every engagement."
+  },
+  "contact": {
+    "heroBadge": "Get in Touch",
+    "heroTitle": "Let's Build Something Exceptional",
+    "heroSubtitle": "Whether you're planning a ServiceNow implementation, exploring digital transformation, or need specialist technology talent — our experts are ready to help.",
+    "formTitle": "Send Us a Message",
+    "formSubtitle": "We respond within 1 business day.",
+    "fields": {
+      "name": "Full Name",
+      "company": "Company / Organization",
+      "email": "Business Email",
+      "phone": "Phone Number",
+      "service": "Service of Interest",
+      "message": "Tell us about your challenge",
+      "submit": "Send Message"
+    },
+    "services": [
+      "ServiceNow Consulting",
+      "Implementation & Integration",
+      "ITSM",
+      "ITOM",
+      "HR Service Delivery",
+      "Managed Services",
+      "AI & Automation",
+      "Cloud Advisory",
+      "Talent Solutions",
+      "Digital Transformation",
+      "Other"
+    ],
+    "officeTitle": "Our Office",
+    "address": "King Fahd Rd, Al Olaya, Riyadh 12212, Saudi Arabia",
+    "phone": "+966 11 416 9366",
+    "email": "hello@aldiratech.com",
+    "globalTitle": "Global Presence",
+    "globalDesc": "While headquartered in Riyadh, Aldiratech serves clients across the GCC, UK, and globally through our K2 Partnering network.",
+    "responseTitle": "Our Promise",
+    "responseBody": "Every inquiry is reviewed by a senior consultant. We respond within 1 business day and will never pass you to an automated sales funnel."
+  },
+  "faq": {
+    "heroBadge": "FAQ",
+    "heroTitle": "Frequently Asked Questions",
+    "heroSubtitle": "Everything you need to know about Aldiratech, our services, and how we deliver enterprise transformation.",
+    "categories": [
+      {
+        "title": "About Aldiratech",
+        "items": [
+          { "q": "What is Aldiratech?", "a": "Aldiratech is a Saudi-led technology consulting and digital transformation company specializing in ServiceNow implementation, enterprise workflow automation, and operational modernization. We serve government, enterprise, and Vision 2030-aligned organizations across Saudi Arabia and globally." },
+          { "q": "Where is Aldiratech based?", "a": "Our headquarters is in Riyadh, Saudi Arabia. We serve clients across the GCC, UK, and globally through our K2 Partnering network and global delivery capabilities." },
+          { "q": "Is Aldiratech a certified ServiceNow partner?", "a": "Yes. Aldiratech operates as part of the K2 Partnering ecosystem, working with certified ServiceNow professionals across all major platform modules including ITSM, ITOM, HRSD, CSM, GRC, and SecOps." },
+          { "q": "What makes Aldiratech different from other IT consultancies?", "a": "We combine Saudi-led local expertise with global delivery capability. Our consultants understand the regulatory, cultural, and operational context of the Kingdom, and we measure success by client business outcomes — not just project completion." },
+          { "q": "Do you work with both government and private sector clients?", "a": "Yes. We have deep experience serving government entities, public sector organizations, and private enterprise across sectors including telecom, healthcare, oil and gas, banking, and retail." }
+        ]
+      },
+      {
+        "title": "ServiceNow Expertise",
+        "items": [
+          { "q": "Which ServiceNow modules do you implement?", "a": "We implement across the full ServiceNow platform including ITSM, ITOM, HRSD, CSM, GRC, SecOps, App Engine, and more. Our team holds certifications across all major modules." },
+          { "q": "Can you help us upgrade our existing ServiceNow environment?", "a": "Absolutely. We provide full upgrade management services including pre-upgrade assessment, custom scope impact analysis, testing, and go-live support." },
+          { "q": "Do you offer ServiceNow licensing advice?", "a": "Yes. As part of our consulting engagement, we help clients understand their licensing requirements, optimize their current entitlements, and plan for future platform growth." },
+          { "q": "Can you build custom applications on ServiceNow?", "a": "Yes. Our platform development team builds custom ServiceNow applications, portals, workflows, and integrations engineered to your specific operating model and requirements." },
+          { "q": "Do you support bilingual Arabic/English ServiceNow deployments?", "a": "Yes. This is a core competency. We deliver fully bilingual ServiceNow implementations with Arabic-first design, RTL support, and bilingual service portals and workflows." }
+        ]
+      },
+      {
+        "title": "Implementation Process",
+        "items": [
+          { "q": "How long does a ServiceNow implementation typically take?", "a": "Timeline varies by scope. A focused ITSM implementation can be completed in 8–12 weeks. Larger multi-module programs typically run 3–9 months depending on complexity, integrations, and organizational readiness." },
+          { "q": "What does your implementation methodology look like?", "a": "We follow a structured four-phase approach: Discovery & Blueprint, Build & Configure, Test & Validate, and Deploy & Adopt. Each phase includes defined milestones, deliverables, and governance checkpoints." },
+          { "q": "Do you handle change management as part of implementation?", "a": "Yes. Change management is embedded in every implementation — from stakeholder alignment and communication planning to training, user adoption programs, and post-go-live support." },
+          { "q": "What happens after go-live?", "a": "We offer comprehensive post-go-live support including hypercare periods, issue resolution, optimization reviews, and transition to our managed services if required." }
+        ]
+      },
+      {
+        "title": "Managed Services",
+        "items": [
+          { "q": "What does your Managed Services offering include?", "a": "Our Managed Services provides platform monitoring, incident and change management, enhancement delivery, upgrade support, performance reviews, and strategic platform advisory — all delivered by bilingual ServiceNow experts." },
+          { "q": "What SLAs do you offer for managed services?", "a": "We offer tiered SLA models including 24/7 coverage with defined response and resolution times based on incident priority. Our standard managed service targets 99.9% platform availability." },
+          { "q": "Can we start managed services after implementation?", "a": "Yes. Many clients transition directly from implementation to managed services. We also onboard organizations whose ServiceNow environments were implemented by other partners." }
+        ]
+      },
+      {
+        "title": "Talent Solutions",
+        "items": [
+          { "q": "What types of ServiceNow professionals do you provide?", "a": "We provide certified ServiceNow developers, architects, ITSM consultants, HRSD specialists, platform administrators, and business analysts — across both project-based and staff augmentation models." },
+          { "q": "Do your talent solutions include knowledge transfer?", "a": "Yes. We build knowledge transfer into every talent engagement to ensure client teams develop internal capability alongside our specialists." },
+          { "q": "Can you support both short-term and long-term talent needs?", "a": "Yes. We offer flexible engagement models from short-term project support to dedicated long-term resource teams embedded in your organization." }
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Vision 2030 · Saudi-led · Globally Trusted",
+    "titleA": "Accelerate Saudi Digital Transformation with",
+    "titleHighlight": "Trusted ServiceNow Experts",
+    "subtitle": "Partner with the Saudi-led team delivering measurable enterprise outcomes for government, telecom, healthcare, and energy.",
+    "button": "Book a Strategy Session"
+  },
+  "footer": {
+    "tagline": "Saudi-led, globally connected ServiceNow consulting and implementation experts delivering enterprise outcomes aligned with Vision 2030.",
+    "company": "A K2 Partnering Company",
+    "office": "Riyadh Office",
+    "address": "King Fahd Rd, Al Olaya, Riyadh 12212, Saudi Arabia",
+    "certs": "Certifications",
+    "certsList": ["ServiceNow Elite", "ISO 27001 / 9001", "ITIL Foundation", "PRINCE2", "SAFe Partner"],
+    "stay": "Stay Connected",
+    "stayDesc": "Insights, updates and best practices, delivered to your inbox.",
+    "emailPlaceholder": "Enter your email",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "links": {
+      "company": "Company",
+      "companyLinks": ["About Us", "Our Values", "Vision 2030 Alignment", "Contact"],
+      "services": "Services",
+      "servicesLinks": ["ServiceNow Consulting", "Implementation", "ITSM", "Managed Services"],
+      "industries": "Industries",
+      "industriesLinks": ["Government", "Oil & Gas", "Healthcare", "Telecom"]
+    }
+  },
+  "theme": { "light": "Light", "dark": "Dark", "system": "System" }
+}

@@ -1,0 +1,42 @@
+name: Commit Content Update
+
+on:
+  repository_dispatch:
+    types: [content-update]
+
+jobs:
+  commit-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate webhook secret
+        run: |
+          if [ "${{ github.event.client_payload.secret }}" != "${{ secrets.GH_WEBHOOK_SECRET }}" ]; then
+            echo "Invalid secret"
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Write en.json
+        run: |
+          cat << 'ENDJSON' > src/content/en.json
+          ${{ github.event.client_payload.en }}
+          ENDJSON
+
+      - name: Write ar.json
+        run: |
+          cat << 'ENDJSON' > src/content/ar.json
+          ${{ github.event.client_payload.ar }}
+          ENDJSON
+
+      - name: Commit and push
+        run: |
+          git config user.name "Aldiratech Content Bot"
+          git config user.email "content-bot@aldiratech.com"
+          git add src/content/en.json src/content/ar.json
+          git commit -m "content: update site content via admin panel [skip ci]" || echo "No changes to commit"
+          git push
