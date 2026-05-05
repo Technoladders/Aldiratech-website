@@ -245,17 +245,33 @@ export default function ContentEditor() {
     setActiveData(prev => ({ ...prev, [section]: value }));
   }, [setActiveData]);
 
+  const commitFile = async (path: string, fileContent: string): Promise<void> => {
+    const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`;
+    const headers = {
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${WEBHOOK_SECRET}`,
+      "X-GitHub-Api-Version": "2022-11-28",
+    };
+    const getRes = await fetch(apiUrl, { headers });
+    if (!getRes.ok && getRes.status !== 404) throw new Error(`GET ${path} failed: ${getRes.status}`);
+    const existing = getRes.ok ? await getRes.json() : null;
+    const sha: string | undefined = existing?.sha;
+    const encoded = btoa(unescape(encodeURIComponent(fileContent)));
+    const body: Record<string, unknown> = { message: `content: update via admin panel`, content: encoded, branch: "main" };
+    if (sha) body.sha = sha;
+    const putRes = await fetch(apiUrl, { method: "PUT", headers, body: JSON.stringify(body) });
+    if (!putRes.ok) { const e = await putRes.json().catch(() => ({})); throw new Error(`PUT ${path} ${putRes.status}: ${(e as any).message || ""}`); }
+  };
+
   const handleSave = async () => {
-    setStatus("saving"); setStatusMsg("Committing to GitHub…");
+    setStatus("saving"); setStatusMsg("Committing en.json…");
     try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/dispatches`, {
-        method: "POST",
-        headers: { Accept: "application/vnd.github+json", "Content-Type": "application/json", Authorization: `Bearer ${WEBHOOK_SECRET}` },
-        body: JSON.stringify({ event_type: "content-update", client_payload: { secret: WEBHOOK_SECRET, en: JSON.stringify(enData, null, 2), ar: JSON.stringify(arData, null, 2) } }),
-      });
-      if (res.status === 204 || res.ok) { setStatus("success"); setStatusMsg("Done! Live in ~90 seconds."); setUnsaved(false); }
-      else throw new Error(`GitHub ${res.status}`);
-    } catch (err) { setStatus("error"); setStatusMsg(`Error: ${err instanceof Error ? err.message : "Unknown"}`); }
+      await commitFile("src/content/en.json", JSON.stringify(enData, null, 2));
+      setStatusMsg("Committing ar.json…");
+      await commitFile("src/content/ar.json", JSON.stringify(arData, null, 2));
+      setStatus("success"); setStatusMsg("Committed! Rebuilding — live in ~90 seconds."); setUnsaved(false);
+    } catch (err) { setStatus("error"); setStatusMsg(`Error: ${err instanceof Error ? err.message : String(err)}`); }
     setTimeout(() => setStatus("idle"), 10000);
   };
 
