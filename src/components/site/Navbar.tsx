@@ -3,299 +3,213 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   Menu, X, ChevronDown, ArrowRight,
-  Compass, Layers, Settings, Activity, Users, Shield, Zap, Cloud, GraduationCap,
   Building2, Flame, HeartPulse, Landmark, Radio, ShoppingBag, Cpu,
+  BarChart3, RefreshCw, Headphones, Package, Factory, LineChart,
+  Users, Workflow, Settings, Activity, Shield, Zap, Bot, BrainCircuit,
+  Sparkles, Compass, Database, Layers,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { useContent } from "@/hooks/useContent";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeToggle } from "./ThemeToggle";
-import { AldiraGlyph, GOLD, GOLD_SOFT, EMERALD, ON_DARK } from "@/assets/design/logo-marks";
-import { useTheme } from "@/context/ThemeContext";
+import AldiraLogo from "@/assets/Aldira_logo.png";
 
-// ── Icon maps ─────────────────────────────────────────────────────────────────
-const svcIcons: Record<string, React.ElementType> = {
-  "servicenow-consulting": Compass,
-  "implementation-integration": Layers,
-  "itsm": Settings,
-  "itom": Activity,
-  "hrsd": Users,
-  "managed-services": Shield,
-  "ai-automation": Zap,
-  "cloud-advisory": Cloud,
-  "talent-solutions": GraduationCap,
-};
 const indIcons: Record<string, React.ElementType> = {
-  "government": Building2,
-  "oil-gas": Flame,
-  "healthcare": HeartPulse,
-  "banking-finance": Landmark,
-  "telecom": Radio,
-  "retail-logistics": ShoppingBag,
-  "enterprise-technology": Cpu,
+  "government": Building2, "oil-gas": Flame, "healthcare": HeartPulse,
+  "banking-finance": Landmark, "telecom": Radio,
+  "retail-logistics": ShoppingBag, "enterprise-technology": Cpu,
 };
 
-// ── Category grouping for Services ───────────────────────────────────────────
-// Groups the 9 services into 4 columns matching the reference image pattern
-// Col structure: { eyebrow, mainSlug (big title), subSlugs[] }
 const SERVICE_COLUMNS = [
   {
-    eyebrow: "PLATFORM STRATEGY",
-    eyebrowAr: "استراتيجية المنصة",
-    mainSlug: "servicenow-consulting",
-    subSlugs: ["implementation-integration", "cloud-advisory"],
-    color: "emerald",
+    eyebrow: "ERP & BUSINESS", eyebrowLine2: "TRANSFORMATION",
+    mainSlug: "sap", mainLabel: "SAP Consulting",
+    mainDesc: "Turn your ERP into a driver of growth — S/4HANA migrations, advisory, and managed services.",
+    Icon: BarChart3, color: "#0070f3",
+    subs: [
+      { slug: "sap-advisory",  label: "SAP Strategy & Advisory" },
+      { slug: "sap-s4hana",    label: "S/4HANA Migration" },
+      { slug: "sap-ams",       label: "Application Management" },
+      { slug: "sap-finance",   label: "Finance & Controlling" },
+    ],
+    subIcons: [Compass, RefreshCw, Headphones, LineChart],
   },
   {
-    eyebrow: "IT OPERATIONS",
-    eyebrowAr: "عمليات تقنية المعلومات",
-    mainSlug: "itsm",
-    subSlugs: ["itom", "managed-services"],
-    color: "blue",
+    eyebrow: "CRM & CUSTOMER", eyebrowLine2: "EXPERIENCE",
+    mainSlug: "salesforce", mainLabel: "Salesforce Consulting",
+    mainDesc: "Elevate every customer relationship — end-to-end CRM, Agentforce AI, and integration.",
+    Icon: Users, color: "#00a1e0",
+    subs: [
+      { slug: "salesforce-sales",     label: "Sales Cloud & Pipeline" },
+      { slug: "salesforce-service",   label: "Service & Experience Cloud" },
+      { slug: "salesforce-marketing", label: "Marketing Cloud & CPQ" },
+      { slug: "salesforce-ai",        label: "Salesforce AI & Automation" },
+    ],
+    subIcons: [BarChart3, Headphones, Package, Bot],
   },
   {
-    eyebrow: "PEOPLE & AUTOMATION",
-    eyebrowAr: "الموارد والأتمتة",
-    mainSlug: "hrsd",
-    subSlugs: ["ai-automation"],
-    color: "gold",
+    eyebrow: "ITSM & WORKFLOW", eyebrowLine2: "AUTOMATION",
+    mainSlug: "servicenow", mainLabel: "ServiceNow Consulting",
+    mainDesc: "Streamline IT and business workflows — official ServiceNow partner with proven accelerators.",
+    Icon: Workflow, color: "#62d84e",
+    subs: [
+      { slug: "servicenow-itsm", label: "IT Service Management" },
+      { slug: "servicenow-itom", label: "IT Operations Management" },
+      { slug: "servicenow-itam", label: "IT Asset Management" },
+      { slug: "servicenow-grc",  label: "GRC & Customer Workflows" },
+    ],
+    subIcons: [Settings, Activity, Database, Shield],
   },
   {
-    eyebrow: "TALENT & GROWTH",
-    eyebrowAr: "المواهب والنمو",
-    mainSlug: "talent-solutions",
-    subSlugs: [],
-    color: "purple",
+    eyebrow: "AI & DIGITAL", eyebrowLine2: "TRANSFORMATION",
+    mainSlug: "ai-automation", mainLabel: "Intelligent Automation",
+    mainDesc: "Put AI into production — GenAI strategy, ML pipelines, RPA, and enterprise deployment.",
+    Icon: BrainCircuit, color: "#a855f7",
+    subs: [
+      { slug: "ai-genai",     label: "Generative AI & LLMs" },
+      { slug: "ai-strategy",  label: "AI Strategy & PoC" },
+      { slug: "ai-rpa",       label: "Robotic Process Automation" },
+      { slug: "ai-analytics", label: "Data & Analytics" },
+    ],
+    subIcons: [Sparkles, Compass, Bot, BarChart3],
   },
 ];
 
-// ── Icon SVG backgrounds (auto-generated per column) ─────────────────────────
-const ColBg = ({ color, Icon }: { color: string; Icon: React.ElementType }) => {
-  const colors: Record<string, string> = {
-    emerald: "bg-primary/8 text-primary",
-    blue: "bg-blue-500/8 text-blue-500",
-    gold: "bg-gold/8 text-gold",
-    purple: "bg-purple-500/8 text-purple-500",
-  };
+const IND_GROUPS = [
+  { label: "PUBLIC SECTOR",       items: ["government", "oil-gas", "healthcare"] },
+  { label: "FINANCIAL & TELECOM", items: ["banking-finance", "telecom"] },
+  { label: "ENTERPRISE & TECH",   items: ["retail-logistics", "enterprise-technology"] },
+];
+
+const Dot = () => <span className="inline-block w-1.5 h-1.5 rounded-sm bg-gold shrink-0" />;
+
+function ServicesMegaMenu({ isAr, onClose }: { isAr: boolean; onClose: () => void }) {
   return (
-    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${colors[color] || colors.emerald}`}>
-      <Icon className="w-6 h-6" />
-    </div>
-  );
-};
-
-// ── Full-width Services mega menu ─────────────────────────────────────────────
-function ServicesMegaMenu({ items, isAr, onClose }: { items: any[]; isAr: boolean; onClose: () => void }) {
-  const bySlug = Object.fromEntries(items.map(i => [i.slug, i]));
-
-  return (
-    // Full viewport width, anchored to the left edge of the page
-    <div className="fixed left-5 right-5 top-[64px] z-50 px-0">
-      <div className="glass-strong border-y border-border-solid shadow-luxe">
-        {/* Top label row */}
-        <div className="border-b border-border-solid/40 px-8 py-3 bg-surface/60">
-          <span className={`text-[10px] uppercase tracking-[0.3em] text-gold font-semibold ${isAr ? "font-arabic normal-case tracking-normal" : ""}`}>
-            {isAr ? "خدماتنا — حلول ServiceNow من الاستراتيجية إلى التشغيل" : "Our Services — End-to-end ServiceNow from strategy to operations"}
-          </span>
-        </div>
-
-        {/* 4-column grid */}
-        <div className="grid grid-cols-4 divide-x divide-border-solid/40">
-          {SERVICE_COLUMNS.map((col) => {
-            const main = bySlug[col.mainSlug];
-            const subs = col.subSlugs.map(s => bySlug[s]).filter(Boolean);
-            const Icon = svcIcons[col.mainSlug] || Compass;
-            if (!main) return null;
-            return (
-              <div key={col.mainSlug} className="p-6 hover:bg-primary/2 transition-colors duration-300 flex flex-col gap-4">
-                {/* Eyebrow + icon */}
-                <div className="flex items-start justify-between gap-2">
-                  <div className={`text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-semibold leading-tight ${isAr ? "font-arabic normal-case tracking-normal" : ""}`}>
-                    {isAr ? col.eyebrowAr : col.eyebrow}
-                  </div>
-                  <ColBg color={col.color} Icon={Icon} />
-                </div>
-
-                {/* Main service title */}
-                <Link
-                  to={`/services/${main.slug}`}
-                  onClick={onClose}
-                  className="group"
-                >
-                  <h3 className={`font-display font-bold text-lg leading-tight group-hover:text-primary transition-colors flex items-start gap-1 ${isAr ? "font-arabic" : ""}`}>
-                    {main.title}
-                    <ArrowRight className="w-4 h-4 mt-1 shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all rtl-flip" />
-                  </h3>
-                </Link>
-
-                {/* Short description */}
-                <p className={`text-xs text-muted-foreground leading-relaxed ${isAr ? "font-arabic" : ""}`}>
-                  {main.desc}
-                </p>
-
-                {/* Divider */}
-                {subs.length > 0 && <div className="h-px bg-border-solid/60" />}
-
-                {/* Sub-service links */}
-                <div className="space-y-1 flex-1">
-                  {subs.map((sub) => (
-                    <Link
-                      key={sub.slug}
-                      to={`/services/${sub.slug}`}
-                      onClick={onClose}
-                      className="flex items-center justify-between gap-2 py-1.5 group"
-                    >
-                      <span className={`text-sm text-foreground/70 group-hover:text-primary transition-colors leading-snug ${isAr ? "font-arabic" : ""}`}>
-                        {sub.title}
-                      </span>
-                      <ArrowRight className="w-3.5 h-3.5 text-muted-foreground shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all rtl-flip" />
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Bottom CTA bar */}
-        <div className="border-t border-border-solid/40 px-8 py-3 bg-surface/40 flex items-center justify-between gap-4">
-          <p className={`text-xs text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
-            {isAr ? "غير متأكد من أين تبدأ؟ فريقنا جاهز لمساعدتك." : "Not sure where to start? Our certified experts will guide you to the right solution."}
-          </p>
-          <Link
-            to="/contact"
-            onClick={onClose}
-            className="flex items-center gap-1.5 text-xs font-semibold text-primary hover:gap-2.5 transition-all whitespace-nowrap shrink-0 group"
-          >
-            {isAr ? "تحدث إلى خبير" : "Talk to an Expert"}
-            <ArrowRight className="w-3.5 h-3.5 rtl-flip group-hover:translate-x-0.5 transition-transform" />
-          </Link>
-        </div>
+    <div className="glass-strong border-y border-border-solid shadow-luxe rounded-b-2xl overflow-hidden">
+      <div className="flex items-center gap-2 px-7 py-2.5 border-b border-border-solid/40 bg-surface/60">
+        <Dot />
+        <span className="text-[10px] uppercase tracking-[0.22em] text-gold font-semibold">
+          {isAr ? "خدماتنا — حلول تقنية شاملة" : "Consulting services by practice area"}
+        </span>
       </div>
-    </div>
-  );
-}
-
-// ── Full-width Industries mega menu ───────────────────────────────────────────
-// 4 columns: first col is heading + description, then 3 industry groups of 2-3 each
-function IndustriesMegaMenu({ items, isAr, onClose }: { items: any[]; isAr: boolean; onClose: () => void }) {
-  // Group industries across 3 content cols (7 items → roughly 3+2+2)
-  const groups = [
-    items.slice(0, 3),
-    items.slice(3, 5),
-    items.slice(5, 7),
-  ];
-  const groupLabels = [
-    { en: "PUBLIC SECTOR", ar: "القطاع العام" },
-    { en: "FINANCIAL & TELECOM", ar: "المالي والاتصالات" },
-    { en: "ENTERPRISE & TECH", ar: "المؤسسات والتقنية" },
-  ];
-
-  return (
-    <div className="fixed left-5 right-5 top-[64px] z-50 px-0">
-      <div className="glass-strong border-y border-border-solid shadow-luxe">
-        {/* Top label */}
-        <div className="border-b border-border-solid/40 px-8 py-3 bg-surface/60">
-          <span className={`text-[10px] uppercase tracking-[0.3em] text-gold font-semibold ${isAr ? "font-arabic normal-case tracking-normal" : ""}`}>
-            {isAr ? "القطاعات — حلول مصممة لواقع صناعتك" : "Industries We Serve — Sector-specific solutions built around your reality"}
-          </span>
-        </div>
-
-        {/* 4-col layout: intro col + 3 industry group cols */}
-        <div className="grid grid-cols-4 divide-x divide-border-solid/40">
-
-          {/* Intro col */}
-          <div className="p-6 flex flex-col gap-4 bg-primary/2">
-            {/* Generated geometric SVG illustration */}
-            <svg viewBox="0 0 120 90" className="w-28 h-20 opacity-70" fill="none">
-              <rect x="10" y="40" width="20" height="40" rx="3" fill="hsl(var(--primary))" opacity="0.2"/>
-              <rect x="38" y="25" width="20" height="55" rx="3" fill="hsl(var(--primary))" opacity="0.35"/>
-              <rect x="66" y="10" width="20" height="70" rx="3" fill="hsl(var(--primary))" opacity="0.5"/>
-              <rect x="94" y="20" width="20" height="60" rx="3" fill="hsl(var(--gold))" opacity="0.6"/>
-              <polyline points="20,40 48,25 76,10 104,20" stroke="hsl(var(--gold))" strokeWidth="1.5" strokeDasharray="3 2"/>
-              {[20,48,76,104].map((x,i) => {
-                const ys = [40,25,10,20];
-                return <circle key={i} cx={x} cy={ys[i]} r="2.5" fill="hsl(var(--gold))"/>;
-              })}
-              <line x1="5" y1="80" x2="115" y2="80" stroke="hsl(var(--border))" strokeWidth="1"/>
-            </svg>
-            <div>
-              <h3 className={`font-display font-bold text-lg mb-2 ${isAr ? "font-arabic" : ""}`}>
-                {isAr ? "خبرة قطاعية عميقة" : "Deep Sector Expertise"}
-              </h3>
-              <p className={`text-xs text-muted-foreground leading-relaxed ${isAr ? "font-arabic" : ""}`}>
-                {isAr
-                  ? "نقدم حلول ServiceNow مصممة خصيصاً للتحديات التشغيلية الفريدة لكل قطاع في المملكة العربية السعودية."
-                  : "We deliver ServiceNow solutions tailored to the unique operational and compliance challenges of each sector across Saudi Arabia."}
-              </p>
+      <div className="grid grid-cols-4 divide-x divide-border-solid/30">
+        {SERVICE_COLUMNS.map((col) => (
+          <div key={col.mainSlug} className="group/col flex flex-col p-5 hover:bg-primary/[0.025] transition-colors duration-300">
+            <div className="mb-3">
+              <div className="text-[9px] uppercase tracking-[0.18em] text-muted-foreground/70 font-semibold leading-tight">{col.eyebrow}</div>
+              <div className="text-[9px] uppercase tracking-[0.18em] text-muted-foreground/70 font-semibold leading-tight">{col.eyebrowLine2}</div>
             </div>
-            <Link
-              to="/industries"
-              onClick={onClose}
-              className="mt-auto flex items-center gap-1.5 text-xs font-semibold text-primary group hover:gap-2.5 transition-all"
-            >
-              {isAr ? "جميع القطاعات" : "View All Industries"}
-              <ArrowRight className="w-3.5 h-3.5 rtl-flip group-hover:translate-x-0.5 transition-transform" />
-            </Link>
-          </div>
-
-          {/* 3 industry group columns */}
-          {groups.map((group, gi) => (
-            <div key={gi} className="p-6 flex flex-col gap-1">
-              {/* Group eyebrow */}
-              <div className={`text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-semibold mb-3 ${isAr ? "font-arabic normal-case tracking-normal" : ""}`}>
-                {isAr ? groupLabels[gi].ar : groupLabels[gi].en}
+            <Link to={`/services/${col.mainSlug}`} onClick={onClose} className="group flex items-start justify-between gap-2 mb-2">
+              <h3 className="font-semibold text-[14px] leading-snug text-foreground group-hover:text-primary transition-colors flex items-center gap-1">
+                {col.mainLabel}
+                <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all rtl-flip shrink-0" />
+              </h3>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300" style={{ background: `${col.color}15` }}>
+                <col.Icon className="w-5 h-5" style={{ color: col.color }} />
               </div>
-
-              {group.map((ind: any) => {
-                const Icon = indIcons[ind.slug] || Building2;
+            </Link>
+            <p className="text-[11px] text-muted-foreground leading-relaxed mb-3 pr-1">{col.mainDesc}</p>
+            <div className="h-px bg-border-solid/50 mb-3" />
+            <div className="space-y-0.5 flex-1">
+              {col.subs.map((sub, si) => {
+                const SubIcon = col.subIcons[si] || ArrowRight;
                 return (
-                  <Link
-                    key={ind.slug}
-                    to={`/industries#${ind.slug}`}
-                    onClick={onClose}
-                    className="group flex items-start gap-3 p-3 rounded-xl hover:bg-primary/5 transition-all duration-200"
-                  >
-                    {/* Auto-generated icon box */}
-                    <div className="w-9 h-9 rounded-xl bg-gold/8 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-gold group-hover:scale-105 transition-all duration-300">
-                      <Icon className="w-4 h-4 text-gold group-hover:text-foreground transition-colors" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-snug ${isAr ? "font-arabic" : ""}`}>
-                        {ind.title}
-                      </div>
-                      <div className={`text-xs text-muted-foreground leading-relaxed mt-0.5 line-clamp-2 ${isAr ? "font-arabic" : ""}`}>
-                        {ind.desc}
-                      </div>
-                    </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-muted-foreground shrink-0 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all rtl-flip" />
+                  <Link key={sub.slug} to={`/services/${col.mainSlug}/${sub.slug}`} onClick={onClose}
+                    className="flex items-center gap-2 px-1.5 py-1 rounded-lg hover:bg-primary/5 group/sub transition-all">
+                    <SubIcon className="w-3 h-3 text-muted-foreground/50 group-hover/sub:text-gold shrink-0 transition-colors" />
+                    <span className="text-[12px] text-muted-foreground group-hover/sub:text-foreground transition-colors leading-tight truncate">{sub.label}</span>
+                    <ArrowRight className="w-2.5 h-2.5 text-muted-foreground/30 ml-auto opacity-0 group-hover/sub:opacity-100 transition-all rtl-flip shrink-0" />
                   </Link>
                 );
               })}
             </div>
-          ))}
-        </div>
-
-        {/* Bottom bar */}
-        <div className="border-t border-border-solid/40 px-8 py-3 bg-surface/40 flex items-center justify-between gap-4">
-          <p className={`text-xs text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
-            {isAr ? "متخصصون في التحول الرقمي عبر القطاعين العام والخاص في المملكة العربية السعودية." : "Specialists in digital transformation across Saudi Arabia's public and private sectors."}
-          </p>
-          <Link
-            to="/contact"
-            onClick={onClose}
-            className="flex items-center gap-1.5 text-xs font-semibold text-primary hover:gap-2.5 transition-all whitespace-nowrap shrink-0 group"
-          >
-            {isAr ? "تحدث إلى خبير القطاع" : "Talk to a Sector Expert"}
-            <ArrowRight className="w-3.5 h-3.5 rtl-flip group-hover:translate-x-0.5 transition-transform" />
-          </Link>
-        </div>
+            <div className="mt-3 h-0.5 w-0 group-hover/col:w-full transition-all duration-500 rounded-full" style={{ background: `${col.color}60` }} />
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center justify-between gap-4 px-7 py-2.5 border-t border-border-solid/40 bg-surface/40">
+        <p className="text-[11px] text-muted-foreground">
+          {isAr ? "لست متأكداً؟ خبراؤنا جاهزون للمساعدة." : "Not sure where to start? Our certified experts will guide you."}
+        </p>
+        <Link to="/contact" onClick={onClose} className="flex items-center gap-1 text-[11px] font-semibold text-gold hover:gap-2 transition-all group whitespace-nowrap">
+          {isAr ? "تحدث إلى خبير" : "Talk to an Expert"}
+          <ArrowRight className="w-3 h-3 rtl-flip group-hover:translate-x-0.5 transition-transform" />
+        </Link>
       </div>
     </div>
   );
 }
 
-// ── Main Navbar ───────────────────────────────────────────────────────────────
+function IndustriesMegaMenu({ items, isAr, onClose }: { items: any[]; isAr: boolean; onClose: () => void }) {
+  const bySlug = Object.fromEntries(items.map((i: any) => [i.slug, i]));
+  return (
+    <div className="glass-strong border-y border-border-solid shadow-luxe rounded-b-2xl overflow-hidden">
+      <div className="flex items-center gap-2 px-7 py-2.5 border-b border-border-solid/40 bg-surface/60">
+        <Dot />
+        <span className="text-[10px] uppercase tracking-[0.22em] text-gold font-semibold">
+          {isAr ? "القطاعات — حلول مصممة لواقع صناعتك" : "Industries We Serve — Sector-specific solutions"}
+        </span>
+      </div>
+      <div className="grid grid-cols-4 divide-x divide-border-solid/30">
+        <div className="p-5 flex flex-col gap-3 bg-primary/[0.02] group/intro">
+          <svg viewBox="0 0 100 75" className="w-24 h-16 opacity-60 group-hover/intro:opacity-90 transition-opacity" fill="none">
+            <rect x="8" y="33" width="16" height="34" rx="2" fill="hsl(var(--primary))" opacity="0.2"/>
+            <rect x="30" y="20" width="16" height="47" rx="2" fill="hsl(var(--primary))" opacity="0.35"/>
+            <rect x="52" y="8" width="16" height="59" rx="2" fill="hsl(var(--primary))" opacity="0.5"/>
+            <rect x="74" y="16" width="16" height="51" rx="2" fill="hsl(var(--gold))" opacity="0.65"/>
+            <polyline points="16,33 38,20 60,8 82,16" stroke="hsl(var(--gold))" strokeWidth="1.5" strokeDasharray="3 2"/>
+            {[[16,33],[38,20],[60,8],[82,16]].map(([x,y],i) => <circle key={i} cx={x} cy={y} r="2" fill="hsl(var(--gold))"/>)}
+            <line x1="4" y1="67" x2="96" y2="67" stroke="hsl(var(--border))" strokeWidth="0.8"/>
+          </svg>
+          <div>
+            <h3 className="font-semibold text-[13px] mb-1 group-hover/intro:text-primary transition-colors">
+              {isAr ? "خبرة قطاعية عميقة" : "Deep Sector Expertise"}
+            </h3>
+            <p className="text-[11px] text-muted-foreground leading-relaxed">
+              {isAr ? "حلول ServiceNow مصممة لكل قطاع في المملكة." : "Solutions tailored to each sector's unique compliance and operational demands."}
+            </p>
+          </div>
+          <Link to="/industries" onClick={onClose} className="flex items-center gap-1 text-[11px] font-semibold text-primary group/lnk hover:gap-2 transition-all mt-auto">
+            {isAr ? "جميع القطاعات" : "View All"}
+            <ArrowRight className="w-3 h-3 rtl-flip group-hover/lnk:translate-x-0.5 transition-transform" />
+          </Link>
+        </div>
+        {IND_GROUPS.map((grp) => (
+          <div key={grp.label} className="p-5 flex flex-col gap-1 hover:bg-primary/[0.02] transition-colors duration-300">
+            <div className="text-[9px] uppercase tracking-[0.18em] text-muted-foreground/60 font-semibold mb-2">{grp.label}</div>
+            {grp.items.map((slug) => {
+              const ind = bySlug[slug];
+              if (!ind) return null;
+              const Icon = indIcons[slug] || Building2;
+              return (
+                <Link key={slug} to={`/industries#${slug}`} onClick={onClose}
+                  className="group flex items-start gap-2.5 p-2 rounded-xl hover:bg-primary/5 transition-all">
+                  <div className="w-7 h-7 rounded-lg bg-gold/8 flex items-center justify-center shrink-0 group-hover:bg-gold group-hover:scale-105 transition-all">
+                    <Icon className="w-3.5 h-3.5 text-gold group-hover:text-white transition-colors" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-[12px] font-semibold text-foreground group-hover:text-primary transition-colors leading-tight">{ind.title}</div>
+                    <div className="text-[10px] text-muted-foreground leading-snug mt-0.5 line-clamp-1">{ind.desc}</div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center justify-between gap-4 px-7 py-2.5 border-t border-border-solid/40 bg-surface/40">
+        <p className="text-[11px] text-muted-foreground">
+          {isAr ? "متخصصون عبر القطاعين العام والخاص." : "Specialists in digital transformation across Saudi Arabia's key sectors."}
+        </p>
+        <Link to="/contact" onClick={onClose} className="flex items-center gap-1 text-[11px] font-semibold text-gold hover:gap-2 transition-all group whitespace-nowrap">
+          {isAr ? "خبير قطاعي" : "Sector Expert"}
+          <ArrowRight className="w-3 h-3 rtl-flip group-hover:translate-x-0.5 transition-transform" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 export const Navbar = () => {
   const { lang } = useLanguage();
   const c = useContent();
@@ -305,10 +219,6 @@ export const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const { resolved } = useTheme();
-  const isDark = resolved === "dark";
-  const primaryColor = isDark ? ON_DARK : EMERALD;
-  const accentColor = isDark ? GOLD_SOFT : GOLD;
   const isAr = lang === "ar";
 
   const mainNav = [
@@ -320,86 +230,43 @@ export const Navbar = () => {
   ];
   const hasMega = ["services", "industries"];
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useEffect(() => { const fn = () => setScrolled(window.scrollY > 24); window.addEventListener("scroll", fn); return () => window.removeEventListener("scroll", fn); }, []);
+  useEffect(() => { setOpen(false); setActiveDropdown(null); setMobileExpanded(null); }, [location.pathname]);
+  useEffect(() => { const fn = () => setActiveDropdown(null); window.addEventListener("scroll", fn, { passive: true }); return () => window.removeEventListener("scroll", fn); }, []);
 
-  useEffect(() => {
-    setOpen(false);
-    setActiveDropdown(null);
-    setMobileExpanded(null);
-  }, [location.pathname]);
-
-  const isActive = (href: string) =>
-    location.pathname === href || (href !== "/" && location.pathname.startsWith(href));
-
-  const openMenu  = (key: string) => { if (closeTimer.current) clearTimeout(closeTimer.current); setActiveDropdown(key); };
+  const isActive = (href: string) => location.pathname === href || (href !== "/" && location.pathname.startsWith(href));
+  const openMenu  = (k: string) => { if (closeTimer.current) clearTimeout(closeTimer.current); setActiveDropdown(k); };
   const closeMenu = () => { closeTimer.current = setTimeout(() => setActiveDropdown(null), 150); };
   const keepOpen  = () => { if (closeTimer.current) clearTimeout(closeTimer.current); };
-
-  // Close mega menu on scroll
-  useEffect(() => {
-    const onScroll = () => setActiveDropdown(null);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const scrolledHeight = scrolled ? "h-16" : "h-20";
-  const megaTop = scrolled ? "top-[64px]" : "top-[80px]";
+  const megaTop = scrolled ? "56px" : "72px";
 
   return (
     <>
       <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "glass-strong border-b border-border-solid/60" : "bg-transparent"}`}>
         <div className="container mx-auto px-2 lg:px-4">
-          <div className={`flex items-center justify-between transition-all duration-500 ${scrolledHeight}`}>
+          <div className={`flex items-center justify-between transition-all duration-500 ${scrolled ? "h-14" : "h-[72px]"}`}>
 
-            {/* Logo — exact same markup as original */}
+            {/* Logo — image replaces wordmark */}
             {location.pathname === "/" ? (
-              <a href="#home" className="flex items-center gap-0 shrink-0">
-                <svg viewBox="0 0 200 200" className="w-14 h-14" aria-hidden="true">
-                  <AldiraGlyph primary={primaryColor} accent={accentColor} />
-                </svg>
-                <div className="leading-tight mt-2">
-                  <div className={`font-display font-bold text-primary text-2xl tracking-tight ${isAr ? "font-arabic" : ""}`}>
-                    {isAr ? <>ألديرا<span className="text-gold">تك</span></> : <>Aldira<span className="text-gold">tech</span></>}
-                  </div>
-                  <div className="text-[10px] uppercase tracking-[0.15em] font-bold text-foreground/80">ServiceNow Experts</div>
-                </div>
+              <a href="#home" className="shrink-0">
+                <img src={AldiraLogo} alt="Aldiratech" className="h-14 w-auto object-contain" />
               </a>
             ) : (
-              <Link to="/" className="flex items-center gap-0 shrink-0">
-                <svg viewBox="0 0 200 200" className="w-14 h-14" aria-hidden="true">
-                  <AldiraGlyph primary={primaryColor} accent={accentColor} />
-                </svg>
-                <div className="leading-tight mt-2">
-                  <div className={`font-display font-bold text-primary text-2xl tracking-tight ${isAr ? "font-arabic" : ""}`}>
-                    {isAr ? <>ألديرا<span className="text-gold">تك</span></> : <>Aldira<span className="text-gold">tech</span></>}
-                  </div>
-                  <div className="text-[10px] uppercase tracking-[0.15em] font-bold text-foreground/80">ServiceNow Experts</div>
-                </div>
+              <Link to="/" className="shrink-0">
+                <img src={AldiraLogo} alt="Aldiratech" className="h-24 w-auto object-contain" />
               </Link>
             )}
 
-            {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-0.5">
               {mainNav.map((item) => (
-                <div
-                  key={item.key}
-                  className="relative"
+                <div key={item.key} className="relative"
                   onMouseEnter={() => hasMega.includes(item.key) ? openMenu(item.key) : closeMenu()}
-                  onMouseLeave={closeMenu}
-                >
-                  <Link
-                    to={item.href}
-                    className={`flex items-center gap-0.5 px-2.5 py-2 text-xs font-medium transition-colors relative group whitespace-nowrap ${
-                      isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-primary"
-                    }`}
-                  >
+                  onMouseLeave={closeMenu}>
+                  <Link to={item.href}
+                    className={`flex items-center gap-0.5 px-2.5 py-1.5 text-xs font-medium transition-colors relative group whitespace-nowrap ${isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-primary"}`}>
                     {item.label}
                     {hasMega.includes(item.key) && (
-                      <ChevronDown className={`w-3 h-3 opacity-60 transition-transform duration-300 ${activeDropdown === item.key ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-3 h-3 opacity-50 transition-transform duration-300 ${activeDropdown === item.key ? "rotate-180" : ""}`} />
                     )}
                     <span className={`absolute left-2.5 right-2.5 -bottom-0.5 h-px bg-gold transition-transform duration-500 origin-left ${isActive(item.href) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} />
                   </Link>
@@ -407,14 +274,11 @@ export const Navbar = () => {
               ))}
             </nav>
 
-            {/* Right */}
             <div className="hidden lg:flex items-center gap-2">
-              <LanguageSwitch />
-              <ThemeToggle />
+              <LanguageSwitch /><ThemeToggle />
               <Link to="/contact"><Button variant="hero" size="sm" className="text-xs px-4 py-1.5 whitespace-nowrap">{c.nav.cta}</Button></Link>
             </div>
 
-            {/* Mobile toggle */}
             <button onClick={() => setOpen(!open)} className="lg:hidden p-2" aria-label="Menu">
               {open ? <X /> : <Menu />}
             </button>
@@ -422,40 +286,25 @@ export const Navbar = () => {
         </div>
       </header>
 
-      {/* ── Mega menus — rendered outside header so they can be full-width ── */}
       {activeDropdown === "services" && (
-        <div
-          onMouseEnter={keepOpen}
-          onMouseLeave={closeMenu}
-          style={{ top: scrolled ? "64px" : "80px" }}
-          className="fixed left-0 right-0 z-40"
-        >
-          <ServicesMegaMenu items={c.services.items} isAr={isAr} onClose={() => setActiveDropdown(null)} />
+        <div style={{ top: megaTop }} className="fixed left-0 right-0 z-40 px-4" onMouseEnter={keepOpen} onMouseLeave={closeMenu}>
+          <ServicesMegaMenu isAr={isAr} onClose={() => setActiveDropdown(null)} />
         </div>
       )}
       {activeDropdown === "industries" && (
-        <div
-          onMouseEnter={keepOpen}
-          onMouseLeave={closeMenu}
-          style={{ top: scrolled ? "64px" : "80px" }}
-          className="fixed left-0 right-0 z-40"
-        >
+        <div style={{ top: megaTop }} className="fixed left-0 right-0 z-40 px-4" onMouseEnter={keepOpen} onMouseLeave={closeMenu}>
           <IndustriesMegaMenu items={c.industries.items} isAr={isAr} onClose={() => setActiveDropdown(null)} />
         </div>
       )}
 
-      {/* ── Mobile menu ── */}
       {open && (
-        <div className="fixed top-16 inset-x-0 z-50 glass-strong border-b border-border-solid lg:hidden overflow-y-auto max-h-[85vh]">
+        <div className="fixed top-14 inset-x-0 z-50 glass-strong border-b border-border-solid lg:hidden overflow-y-auto max-h-[85vh]">
           <div className="p-4 space-y-1">
             {mainNav.map((item) => (
               <div key={item.key}>
                 <div className="flex items-center justify-between">
-                  <Link
-                    to={item.href}
-                    onClick={() => !hasMega.includes(item.key) && setOpen(false)}
-                    className={`flex-1 py-2.5 px-3 text-sm font-medium rounded-xl hover:bg-primary/5 ${isActive(item.href) ? "text-primary" : ""} ${isAr ? "font-arabic" : ""}`}
-                  >
+                  <Link to={item.href} onClick={() => !hasMega.includes(item.key) && setOpen(false)}
+                    className={`flex-1 py-2.5 px-3 text-sm font-medium rounded-xl hover:bg-primary/5 ${isActive(item.href) ? "text-primary" : ""}`}>
                     {item.label}
                   </Link>
                   {hasMega.includes(item.key) && (
@@ -464,35 +313,31 @@ export const Navbar = () => {
                     </button>
                   )}
                 </div>
-
                 {item.key === "services" && mobileExpanded === "services" && (
-                  <div className="pl-3 space-y-0.5 pb-2">
-                    {c.services.items.map((s) => {
-                      const Icon = svcIcons[s.slug] || Compass;
-                      return (
-                        <Link key={s.slug} to={`/services/${s.slug}`} onClick={() => setOpen(false)}
-                          className="flex items-center gap-3 py-2 px-3 rounded-xl hover:bg-primary/5 group">
-                          <div className="w-7 h-7 rounded-lg bg-primary/8 flex items-center justify-center shrink-0">
-                            <Icon className="w-3.5 h-3.5 text-primary" />
-                          </div>
-                          <span className={`text-sm text-muted-foreground group-hover:text-primary transition-colors ${isAr ? "font-arabic" : ""}`}>{s.title}</span>
+                  <div className="pl-3 space-y-2 pb-2">
+                    {SERVICE_COLUMNS.map((col) => (
+                      <div key={col.mainSlug}>
+                        <div className="text-[9px] uppercase tracking-widest text-muted-foreground/60 px-3 pt-2 pb-0.5">{col.eyebrow} {col.eyebrowLine2}</div>
+                        <Link to={`/services/${col.mainSlug}`} onClick={() => setOpen(false)}
+                          className="flex items-center gap-2 py-1.5 px-3 rounded-xl hover:bg-primary/5">
+                          <col.Icon className="w-3.5 h-3.5 shrink-0" style={{ color: col.color }} />
+                          <span className="text-sm font-medium">{col.mainLabel}</span>
                         </Link>
-                      );
-                    })}
+                      </div>
+                    ))}
                   </div>
                 )}
-
                 {item.key === "industries" && mobileExpanded === "industries" && (
                   <div className="pl-3 space-y-0.5 pb-2">
-                    {c.industries.items.map((ind) => {
+                    {c.industries.items.map((ind: any) => {
                       const Icon = indIcons[ind.slug] || Building2;
                       return (
                         <Link key={ind.slug} to={`/industries#${ind.slug}`} onClick={() => setOpen(false)}
-                          className="flex items-center gap-3 py-2 px-3 rounded-xl hover:bg-primary/5 group">
-                          <div className="w-7 h-7 rounded-lg bg-gold/8 flex items-center justify-center shrink-0">
-                            <Icon className="w-3.5 h-3.5 text-gold" />
+                          className="flex items-center gap-2.5 py-1.5 px-3 rounded-xl hover:bg-primary/5 group">
+                          <div className="w-6 h-6 rounded-lg bg-gold/8 flex items-center justify-center shrink-0">
+                            <Icon className="w-3 h-3 text-gold" />
                           </div>
-                          <span className={`text-sm text-muted-foreground group-hover:text-primary transition-colors ${isAr ? "font-arabic" : ""}`}>{ind.title}</span>
+                          <span className="text-sm text-muted-foreground group-hover:text-primary">{ind.title}</span>
                         </Link>
                       );
                     })}
@@ -500,14 +345,9 @@ export const Navbar = () => {
                 )}
               </div>
             ))}
-
-            <div className="flex items-center gap-3 pt-3 px-3 border-t border-border-solid/30 mt-2">
-              <LanguageSwitch /><ThemeToggle />
-            </div>
+            <div className="flex items-center gap-3 pt-3 px-3 border-t border-border-solid/30 mt-2"><LanguageSwitch /><ThemeToggle /></div>
             <div className="px-3 pt-2">
-              <Link to="/contact" onClick={() => setOpen(false)}>
-                <Button variant="hero" className="w-full">{c.nav.cta}</Button>
-              </Link>
+              <Link to="/contact" onClick={() => setOpen(false)}><Button variant="hero" className="w-full">{c.nav.cta}</Button></Link>
             </div>
           </div>
         </div>

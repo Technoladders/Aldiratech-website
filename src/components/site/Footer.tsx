@@ -5,6 +5,8 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useContent } from "@/hooks/useContent";
 import { AldiraGlyph, GOLD, GOLD_SOFT, EMERALD, ON_DARK } from "@/assets/design/logo-marks";
 import { useTheme } from "@/context/ThemeContext";
+import AldiraLogo from "@/assets/Aldira_logo.png";
+
 
 export const Footer = () => {
   const { lang } = useLanguage();
@@ -24,21 +26,15 @@ export const Footer = () => {
 
           {/* Brand — exact same SVG size/gap/wordmark as original Footer */}
           <div className="lg:col-span-4">
-            <Link to="/">
-              <div className="flex items-center gap-0 mb-6">
-                <svg viewBox="0 0 200 200" className="w-16 h-16 shrink-0" aria-hidden="true">
-                  <AldiraGlyph primary={primaryColor} accent={accentColor} />
-                </svg>
-                <div className="leading-tight mt-4">
-                  <div className={`font-display font-bold text-primary text-2xl tracking-tight ${lang === "ar" ? "font-arabic" : ""}`}>
-                    {lang === "ar" ? <>ألديرا<span className="text-gold">تك</span></> : <>Aldira<span className="text-gold">tech</span></>}
-                  </div>
-                  <div className="text-[10px] uppercase tracking-[0.15em] font-bold text-foreground/80">
-                    ServiceNow Experts
-                  </div>
-                </div>
-              </div>
-            </Link>
+                       {location.pathname === "/" ? (
+              <a href="#home" className="shrink-0">
+                <img src={AldiraLogo} alt="Aldiratech" className="h-14 w-auto object-contain" />
+              </a>
+            ) : (
+              <Link to="/" className="shrink-0">
+                <img src={AldiraLogo} alt="Aldiratech" className="h-24 w-auto object-contain" />
+              </Link>
+            )}
             <p className={`text-sm text-muted-foreground leading-relaxed mb-6 max-w-sm ${isAr ? "font-arabic" : ""}`}>
               {t.tagline}
             </p>
@@ -65,15 +61,15 @@ export const Footer = () => {
               <li className="flex gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary shrink-0" /> {t.address}
               </li>
-              <li className="flex gap-3">
+              {/* <li className="flex gap-3">
                 <Phone className="w-4 h-4 mt-0.5 text-primary shrink-0" /> +966 11 416 9366
-              </li>
+              </li> */}
               <li className="flex gap-3">
-                <Mail className="w-4 h-4 mt-0.5 text-primary shrink-0" /> hello@aldiratech.com
+                <Mail className="w-4 h-4 mt-0.5 text-primary shrink-0" /> info@aldiratech.com
               </li>
             </ul>
             {/* Added page links beneath office info — fits in the same col */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <div className={`text-xs uppercase tracking-[0.2em] text-foreground font-semibold mb-4 ${isAr ? "font-arabic normal-case tracking-normal text-sm" : ""}`}>
                 {isAr ? "روابط سريعة" : "Quick Links"}
               </div>
@@ -91,7 +87,7 @@ export const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
 
           {/* Certifications — same as original */}
