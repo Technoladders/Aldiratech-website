@@ -68,387 +68,534 @@
       "Ministry of Health"
     ]
   },
-  "services": {
-    "eyebrow": "Our Capabilities",
-    "titleA": "End-to-End ServiceNow",
-    "titleB": "Implementation Excellence",
-    "subtitle": "From strategy to managed services, we deliver every layer of the ServiceNow value chain with Saudi precision and global rigor.",
-    "learnMore": "Learn more",
-    "heroBadge": "ServiceNow Expertise",
-    "heroTitle": "Enterprise Solutions Built for Transformation",
-    "heroSubtitle": "Every service we offer is engineered to align technology with business outcomes — delivering measurable value at every stage of your digital journey.",
-    "items": [
-      {
-        "slug": "servicenow-consulting",
-        "title": "ServiceNow Consulting",
-        "desc": "Align ServiceNow investments with enterprise vision and Saudi Vision 2030 priorities.",
+"services": {
+  "eyebrow": "Our Capabilities",
+  "titleA": "End-to-End Technology",
+  "titleB": "Solutions",
+  "subtitle": "From ERP modernisation to AI at scale, we deliver every layer of the enterprise technology stack with Saudi precision and global rigor.",
+  "learnMore": "Learn more",
+  "heroBadge": "Technology Expertise",
+  "heroTitle": "Enterprise Solutions Built for Transformation",
+  "heroSubtitle": "Every service we offer is engineered to align technology with business outcomes – delivering measurable value at every stage of your digital journey.",
+  "items": [
+    {
+      "slug": "sap",
+      "title": "SAP Consulting",
+      "desc": "Turn your ERP into a driver of growth – S/4HANA migrations, advisory, and managed services.",
+      "icon": "BarChart3",
+      "eyebrow": "ERP & BUSINESS",
+"eyebrowLine2": "TRANSFORMATION",
+"mainLabel": "SAP Consulting",
+"mainDesc": "Turn your ERP into a driver of growth - S/4HANA migrations, advisory, and managed services.",
+      "challenge": "Organizations struggle to extract full value from their ERP investments without a clear platform strategy aligned to business goals.",
+      "challenges": [
+        "Unclear ERP roadmap and investment priorities",
+        "Legacy ERP systems creating operational bottlenecks",
+        "Lack of internal SAP expertise and governance"
+      ],
+      "overview": "Our SAP consulting practice helps organizations define, plan, and execute a strategic ERP roadmap. We assess your current state, identify transformation opportunities, and create a clear path from fragmented operations to an integrated digital enterprise.",
+      "outcomes": [
+        "Clear ERP strategy aligned to business priorities",
+        "Defined S/4HANA migration roadmap",
+        "Governance framework for sustainable growth",
+        "Executive alignment and stakeholder buy-in"
+      ],
+      "process": [
+        { "step": "1", "title": "Discovery", "desc": "Assess current ERP maturity, gaps, and business goals." },
+        { "step": "2", "title": "Strategy", "desc": "Define roadmap, priorities, and investment plan." },
+        { "step": "3", "title": "Design", "desc": "Blueprint the solution architecture and governance model." },
+        { "step": "4", "title": "Enablement", "desc": "Equip teams and leadership to drive adoption." }
+      ]
+    },
+    {
+      "slug": "salesforce",
+      "title": "Salesforce Consulting",
+      "desc": "Elevate every customer relationship – end-to-end CRM, Agentforce AI, and integration.",
+      "icon": "Users",
+      "eyebrow": "CRM & CUSTOMER",
+"eyebrowLine2": "EXPERIENCE",
+"mainLabel": "Salesforce Consulting",
+"mainDesc": "Elevate every customer relationship - end-to-end CRM, Agentforce AI, and integration.",
+      "challenge": "Disconnected customer data, fragmented sales processes, and inconsistent service experiences create friction across the entire customer lifecycle.",
+      "challenges": [
+        "Siloed customer data across sales, service, and marketing",
+        "Inconsistent customer experiences across channels",
+        "Manual processes slowing sales and service teams"
+      ],
+      "overview": "We implement Salesforce solutions that unify your customer data, automate sales and service workflows, and create personalised experiences at every touchpoint. From Sales Cloud to Agentforce AI, we build CRM ecosystems that drive revenue and loyalty.",
+      "outcomes": [
+        "360° customer view across all touchpoints",
+        "Automated sales and service workflows",
+        "AI-powered customer insights and recommendations",
+        "Increased customer retention and lifetime value"
+      ],
+      "process": [
+        { "step": "1", "title": "Assess", "desc": "Map current customer journeys and system landscape." },
+        { "step": "2", "title": "Design", "desc": "Architect the CRM solution and integration points." },
+        { "step": "3", "title": "Build", "desc": "Configure, customise, and integrate Salesforce." },
+        { "step": "4", "title": "Adopt", "desc": "Drive user adoption and measure business impact." }
+      ]
+    },
+    {
+      "slug": "servicenow",
+      "title": "ServiceNow Consulting",
+      "desc": "Streamline IT and business workflows – official ServiceNow partner with proven accelerators.",
+      "icon": "Workflow",
+      "eyebrow": "ITSM & WORKFLOW",
+"eyebrowLine2": "AUTOMATION",
+"mainLabel": "ServiceNow Consulting",
+"mainDesc": "Streamline IT and business workflows - official ServiceNow partner with proven accelerators.",
+      "challenge": "Reactive IT operations, unresolved incidents, and manual service desk processes drag down productivity and erode trust.",
+      "challenges": [
+        "High incident volumes with slow resolution times",
+        "Manual, inconsistent service desk operations",
+        "Lack of visibility into IT performance and SLAs"
+      ],
+      "overview": "Our ServiceNow practice modernises how your IT organisation delivers, manages, and measures services. From incident and change management to service catalog and CMDB, we build structured operations that restore confidence and improve business outcomes.",
+      "outcomes": [
+        "Reduced MTTR and incident resolution times",
+        "Structured change management with lower risk",
+        "Self-service adoption reducing service desk load",
+        "Real-time visibility into IT health and SLA compliance"
+      ],
+      "process": [
+        { "step": "1", "title": "Assess", "desc": "Evaluate current ITSM maturity and pain points." },
+        { "step": "2", "title": "Design", "desc": "Define service model, workflows, and SLA targets." },
+        { "step": "3", "title": "Implement", "desc": "Deploy and configure ITSM modules." },
+        { "step": "4", "title": "Optimize", "desc": "Tune performance and drive continuous improvement." }
+      ]
+    },
+    {
+      "slug": "ai-automation",
+      "title": "Intelligent Automation",
+      "desc": "Put AI into production – GenAI strategy, ML pipelines, RPA, and enterprise deployment.",
+      "icon": "BrainCircuit",
+      "eyebrow": "AI & DIGITAL",
+"eyebrowLine2": "TRANSFORMATION",
+"mainLabel": "Intelligent Automation",
+"mainDesc": "Put AI into production - GenAI strategy, ML pipelines, RPA, and enterprise deployment.",
+      "challenge": "Manual processes, repetitive tasks, and reactive operations constrain organisational productivity and scalability.",
+      "challenges": [
+        "High manual effort in routine IT and business processes",
+        "Slow response times due to human-dependent workflows",
+        "Inability to scale operations without adding headcount"
+      ],
+      "overview": "We help organisations harness AI and intelligent automation to eliminate manual work, accelerate decision‑making, and scale operations efficiently. From virtual agents to predictive analytics and workflow automation, we design AI‑powered solutions that create measurable operational impact.",
+      "outcomes": [
+        "40–60% reduction in manual task handling",
+        "Faster decision‑making through AI‑assisted insights",
+        "24/7 virtual agent handling tier‑1 requests",
+        "Predictive analytics for proactive operations"
+      ],
+      "process": [
+        { "step": "1", "title": "Identify", "desc": "Map automation opportunities and ROI potential." },
+        { "step": "2", "title": "Design", "desc": "Architect AI and automation workflows." },
+        { "step": "3", "title": "Deploy", "desc": "Implement and test automation solutions." },
+        { "step": "4", "title": "Scale", "desc": "Expand automation coverage and measure impact." }
+      ]
+    },
+          {
+        "parent": "sap",
+        "slug": "sap-advisory",
+        "title": "SAP Strategy & Advisory",
+        "desc": "Define your SAP roadmap, investment priorities, and governance model.",
         "icon": "Compass",
-        "challenge": "Organizations struggle to extract full value from ServiceNow without a clear platform strategy aligned to business goals.",
+        "challenge": "Without a clear SAP strategy, investments become reactive patches rather than transformative platforms.",
         "challenges": [
-          "Unclear platform roadmap and investment priorities",
-          "Misalignment between IT capabilities and business outcomes",
-          "Lack of internal ServiceNow expertise and governance"
+          "Unclear ERP direction and executive alignment",
+          "Underutilised SAP modules due to lack of planning",
+          "No governance for ongoing optimisation"
         ],
-        "overview": "Our ServiceNow consulting practice helps organizations define, plan, and execute a strategic ServiceNow roadmap. We assess your current state, identify transformation opportunities, and create a clear path from fragmented operations to an integrated digital enterprise.",
+        "overview": "We assess your current SAP landscape, business goals, and readiness to craft a strategy that turns SAP into a competitive advantage.",
         "outcomes": [
-          "Clear platform strategy aligned to business priorities",
-          "Defined ROI metrics and value realization plan",
-          "Governance framework for sustainable growth",
-          "Executive alignment and stakeholder buy-in"
+          "Validated ERP roadmap aligned with business strategy",
+          "Investment case with defined ROI milestones",
+          "Governance framework for future upgrades"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Discovery",
-            "desc": "Assess current platform maturity, gaps, and business goals."
-          },
-          {
-            "step": "2",
-            "title": "Strategy",
-            "desc": "Define roadmap, priorities, and investment plan."
-          },
-          {
-            "step": "3",
-            "title": "Design",
-            "desc": "Blueprint the solution architecture and governance model."
-          },
-          {
-            "step": "4",
-            "title": "Enablement",
-            "desc": "Equip teams and leadership to drive adoption."
-          }
+          { "step": "1", "title": "Assess", "desc": "Map current SAP footprint and maturity." },
+          { "step": "2", "title": "Envision", "desc": "Define target state and value drivers." },
+          { "step": "3", "title": "Plan", "desc": "Create phased roadmap and business case." },
+          { "step": "4", "title": "Govern", "desc": "Establish steering and change management." }
         ]
       },
       {
-        "slug": "implementation-integration",
-        "title": "Implementation & Integration",
-        "desc": "Secure, scalable rollouts across ITSM, ITOM, HRSD, CSM, and SecOps.",
-        "icon": "Layers",
-        "challenge": "Poorly executed implementations create technical debt, low adoption, and failed ROI on expensive platform investments.",
+        "parent": "sap",
+        "slug": "sap-s4hana",
+        "title": "S/4HANA Migration",
+        "desc": "Seamlessly migrate from legacy SAP to S/4HANA with minimal business disruption.",
+        "icon": "RefreshCw",
+        "challenge": "Migrating from ECC or other ERPs to S/4HANA is complex, high‑risk, and often underestimated.",
         "challenges": [
-          "Complex legacy system integrations causing delays",
-          "Low user adoption due to poor change management",
-          "Over-customization creating upgrade obstacles"
+          "Data quality and legacy custom code",
+          "Business downtime during cutover",
+          "Change management for new Fiori interfaces"
         ],
-        "overview": "Aldiratech delivers structured, risk-managed ServiceNow implementations using a proven methodology that ensures on-time delivery, seamless integrations, and high adoption rates. We configure, customize, and integrate ServiceNow across your enterprise ecosystem.",
+        "overview": "Our proven migration methodology reduces risk and accelerates your move to S/4HANA, covering every phase from system assessment to post‑go‑live support.",
         "outcomes": [
-          "On-time, on-budget deployments with minimal disruption",
-          "Seamless integration with existing enterprise systems",
-          "High user adoption through embedded change management",
-          "Future-proof architecture with upgrade-ready configurations"
+          "Clean, validated data migration",
+          "Minimal business disruption",
+          "Full Fiori adoption with user training"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Blueprint",
-            "desc": "Define scope, architecture, and integration points."
-          },
-          {
-            "step": "2",
-            "title": "Build",
-            "desc": "Configure, customize, and integrate the platform."
-          },
-          {
-            "step": "3",
-            "title": "Test",
-            "desc": "Comprehensive QA, UAT, and performance validation."
-          },
-          {
-            "step": "4",
-            "title": "Deploy",
-            "desc": "Go-live with full change management support."
-          }
+          { "step": "1", "title": "Readiness Check", "desc": "Analyse current system and custom code." },
+          { "step": "2", "title": "Design", "desc": "Target architecture and data model." },
+          { "step": "3", "title": "Build & Test", "desc": "Conversion, integration, and UAT." },
+          { "step": "4", "title": "Cutover", "desc": "Go‑live with hyper‑care support." }
         ]
       },
       {
-        "slug": "itsm",
+        "parent": "sap",
+        "slug": "sap-ams",
+        "title": "Application Management Services",
+        "desc": "Ongoing SAP support, optimisation, and enhancement to keep your systems healthy.",
+        "icon": "Headphones",
+        "challenge": "Internal teams often lack the bandwidth to proactively manage and continuously improve SAP environments.",
+        "challenges": [
+          "Slow incident resolution and backlog",
+          "No continuous improvement pipeline",
+          "High cost of full‑time SAP specialists"
+        ],
+        "overview": "Our AMS offering provides dedicated SAP experts who monitor, support, and enhance your SAP landscape—ensuring stability, compliance, and value realisation.",
+        "outcomes": [
+          "99.5% SLA‑backed support",
+          "Regular health checks and tuning",
+          "Defined enhancement roadmap"
+        ],
+        "process": [
+          { "step": "1", "title": "Transition", "desc": "Knowledge transfer and environment takeover." },
+          { "step": "2", "title": "Stabilise", "desc": "Resolve backlog and establish baseline." },
+          { "step": "3", "title": "Optimise", "desc": "Continuous improvements and upgrades." },
+          { "step": "4", "title": "Evolve", "desc": "Proactive innovation and roadmap delivery." }
+        ]
+      },
+      {
+        "parent": "sap",
+        "slug": "sap-finance",
+        "title": "Finance & Controlling",
+        "desc": "Modernise finance operations with SAP FI/CO, reporting, and automation.",
+        "icon": "LineChart",
+        "challenge": "Manual financial processes, fragmented data, and slow closing cycles limit business agility.",
+        "challenges": [
+          "Time‑consuming month‑end close",
+          "Disconnected planning and consolidation",
+          "Compliance and audit risks"
+        ],
+        "overview": "We streamline financial workflows through SAP FI/CO, automate reporting, and integrate financial data for real‑time insights and compliance.",
+        "outcomes": [
+          "30–50% faster close cycle",
+          "Automated reconciliation and reporting",
+          "Audit‑ready financial processes"
+        ],
+        "process": [
+          { "step": "1", "title": "Blueprint", "desc": "Map financial processes and pain points." },
+          { "step": "2", "title": "Implement", "desc": "Configure SAP FI/CO modules." },
+          { "step": "3", "title": "Integrate", "desc": "Connect with planning and consolidation." },
+          { "step": "4", "title": "Optimise", "desc": "Continuous improvement and user adoption." }
+        ]
+      },
+      {
+        "parent": "salesforce",
+        "slug": "salesforce-sales",
+        "title": "Sales Cloud & Pipeline",
+        "desc": "Transform sales processes with pipeline management, forecasting, and automation.",
+        "icon": "BarChart3",
+        "challenge": "Sales teams waste time on administrative tasks and lack visibility into pipeline health.",
+        "challenges": [
+          "Inconsistent sales processes",
+          "Poor pipeline visibility and forecasting",
+          "Manual data entry reducing selling time"
+        ],
+        "overview": "We implement Sales Cloud to standardise sales processes, automate pipeline management, and provide real‑time insights for faster, smarter selling.",
+        "outcomes": [
+          "15‑20% increase in sales productivity",
+          "Accurate forecasting with AI‑driven insights",
+          "Mobile‑first enablement for field teams"
+        ],
+        "process": [
+          { "step": "1", "title": "Discover", "desc": "Map current sales process and tech stack." },
+          { "step": "2", "title": "Design", "desc": "Sales process redesign and CRM configuration." },
+          { "step": "3", "title": "Build", "desc": "Configure, integrate, and test Sales Cloud." },
+          { "step": "4", "title": "Adopt", "desc": "Training and adoption for sales teams." }
+        ]
+      },
+      {
+        "parent": "salesforce",
+        "slug": "salesforce-service",
+        "title": "Service & Experience Cloud",
+        "desc": "Deliver exceptional customer service with case management, omnichannel, and self‑service.",
+        "icon": "Headphones",
+        "challenge": "Fragmented support channels and manual case handling result in poor customer experiences and agent burnout.",
+        "challenges": [
+          "Siloed support channels",
+          "High average handle times",
+          "Lack of customer self‑service"
+        ],
+        "overview": "We deploy Service Cloud and Experience Cloud to unify support channels, automate case routing, and create modern self‑service portals—delighting customers and empowering agents.",
+        "outcomes": [
+          "40% reduction in case resolution time",
+          "Omnichannel experience with live chat, email, and phone",
+          "Customer satisfaction uplift of 20%+"
+        ],
+        "process": [
+          { "step": "1", "title": "Audit", "desc": "Analyse current service channels and pain points." },
+          { "step": "2", "title": "Design", "desc": "Define service processes and portal experience." },
+          { "step": "3", "title": "Implement", "desc": "Configure Service & Experience Cloud." },
+          { "step": "4", "title": "Launch", "desc": "Go‑live with agent training and change management." }
+        ]
+      },
+      {
+        "parent": "salesforce",
+        "slug": "salesforce-marketing",
+        "title": "Marketing Cloud & CPQ",
+        "desc": "Automate marketing campaigns and streamline pricing, quoting, and contracting.",
+        "icon": "Package",
+        "challenge": "Disconnected marketing and sales processes lead to inconsistent messaging and slow quote‑to‑cash cycles.",
+        "challenges": [
+          "Inconsistent multi‑channel marketing",
+          "Manual quoting and approval bottlenecks",
+          "Poor campaign ROI measurement"
+        ],
+        "overview": "We integrate Marketing Cloud and Salesforce CPQ to automate campaigns, simplify complex pricing, and accelerate the quote‑to‑cash process.",
+        "outcomes": [
+          "30% faster quote‑to‑cash",
+          "Personalised, multi‑channel campaigns",
+          "Real‑time ROI tracking"
+        ],
+        "process": [
+          { "step": "1", "title": "Map", "desc": "Document marketing and quoting workflows." },
+          { "step": "2", "title": "Configure", "desc": "Set up Marketing Cloud and CPQ." },
+          { "step": "3", "title": "Integrate", "desc": "Connect with Sales Cloud and ERP." },
+          { "step": "4", "title": "Optimise", "desc": "A/B testing, automation rules, and analytics." }
+        ]
+      },
+      {
+        "parent": "salesforce",
+        "slug": "salesforce-ai",
+        "title": "Salesforce AI & Automation",
+        "desc": "Embed AI into your CRM with Einstein and Agentforce for smarter automation.",
+        "icon": "Bot",
+        "challenge": "Sales and service teams still spend hours on repetitive tasks and lack predictive intelligence.",
+        "challenges": [
+          "Reactive, not proactive, customer interactions",
+          "Manual data analysis and forecasting",
+          "Underutilised customer signals"
+        ],
+        "overview": "We unlock the power of Salesforce Einstein and Agentforce—deploying AI‑powered insights, next‑best‑action recommendations, and autonomous agents that handle routine work.",
+        "outcomes": [
+          "30% more time for high‑value work",
+          "AI‑driven lead and opportunity scoring",
+          "Autonomous case resolution with Agentforce"
+        ],
+        "process": [
+          { "step": "1", "title": "Identify", "desc": "Find high‑impact AI use cases." },
+          { "step": "2", "title": "Configure", "desc": "Set up Einstein and Agentforce features." },
+          { "step": "3", "title": "Train", "desc": "Train models on your data." },
+          { "step": "4", "title": "Adopt", "desc": "Enable users and measure impact." }
+        ]
+      },
+      {
+        "parent": "servicenow",
+        "slug": "servicenow-itsm",
         "title": "IT Service Management",
         "desc": "Transform IT operations with structured incident, change, and problem management.",
         "icon": "Settings",
-        "challenge": "Reactive IT operations, unresolved incidents, and manual service desk processes drag down productivity and erode trust.",
+        "challenge": "Reactive IT operations create long resolution times and erode business trust.",
         "challenges": [
-          "High incident volumes with slow resolution times",
-          "Manual, inconsistent service desk operations",
-          "Lack of visibility into IT performance and SLAs"
+          "High incident volumes with slow MTTR",
+          "Unstructured change management causing outages",
+          "Poor service catalogue and self‑service adoption"
         ],
-        "overview": "Our ITSM practice modernizes how your IT organization delivers, manages, and measures services. From incident and change management to service catalog and CMDB, we build structured operations that restore confidence and improve business outcomes.",
+        "overview": "Our ITSM practice builds a modern, ITIL‑aligned service operation on ServiceNow—reducing downtime, improving user satisfaction, and driving efficiency.",
         "outcomes": [
-          "Reduced MTTR and incident resolution times",
-          "Structured change management with lower risk",
-          "Self-service adoption reducing service desk load",
-          "Real-time visibility into IT health and SLA compliance"
+          "50% reduction in incident MTTR",
+          "80% change success rate",
+          "Self‑service adoption exceeding 60%"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Assess",
-            "desc": "Evaluate current ITSM maturity and pain points."
-          },
-          {
-            "step": "2",
-            "title": "Design",
-            "desc": "Define service model, workflows, and SLA targets."
-          },
-          {
-            "step": "3",
-            "title": "Implement",
-            "desc": "Deploy and configure ITSM modules."
-          },
-          {
-            "step": "4",
-            "title": "Optimize",
-            "desc": "Tune performance and drive continuous improvement."
-          }
+          { "step": "1", "title": "Assess", "desc": "Evaluate current ITSM maturity." },
+          { "step": "2", "title": "Design", "desc": "Service model, workflows, and SLA framework." },
+          { "step": "3", "title": "Implement", "desc": "Configure ITSM modules and integrations." },
+          { "step": "4", "title": "Adopt", "desc": "User training and continuous improvement." }
         ]
       },
       {
-        "slug": "itom",
+        "parent": "servicenow",
+        "slug": "servicenow-itom",
         "title": "IT Operations Management",
-        "desc": "Gain full visibility into infrastructure and proactively prevent outages.",
+        "desc": "Gain complete visibility into your infrastructure and proactively prevent outages.",
         "icon": "Activity",
-        "challenge": "Without unified infrastructure visibility, IT teams react to outages rather than preventing them — increasing downtime and business risk.",
+        "challenge": "Without unified infrastructure visibility, IT teams react to outages rather than preventing them.",
         "challenges": [
-          "Blind spots across cloud, on-prem, and hybrid environments",
+          "Blind spots across hybrid environments",
           "Reactive incident response with no predictive capability",
-          "Disconnected monitoring tools creating operational silos"
+          "Disjointed monitoring tools creating silos"
         ],
-        "overview": "Aldiratech's ITOM practice delivers comprehensive infrastructure visibility, event management, and AIOps capabilities on ServiceNow. We help organizations shift from reactive to proactive operations — reducing outages, accelerating resolution, and protecting business continuity.",
+        "overview": "We implement ServiceNow ITOM to deliver comprehensive visibility, AIOps‑powered event correlation, and proactive operations that protect business continuity.",
         "outcomes": [
-          "Complete infrastructure visibility across all environments",
-          "Proactive event correlation and intelligent alerting",
-          "Reduced MTTD and MTTR through AIOps",
-          "Lower operational risk and improved business continuity"
+          "40% reduction in MTTD and MTTR",
+          "Full infrastructure visibility from a single pane",
+          "Proactive alerting and automated remediation"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Discover",
-            "desc": "Map all infrastructure assets and dependencies."
-          },
-          {
-            "step": "2",
-            "title": "Monitor",
-            "desc": "Implement event management and health monitoring."
-          },
-          {
-            "step": "3",
-            "title": "Correlate",
-            "desc": "Enable AIOps for intelligent event correlation."
-          },
-          {
-            "step": "4",
-            "title": "Automate",
-            "desc": "Deploy remediation automation and runbooks."
-          }
+          { "step": "1", "title": "Discover", "desc": "Map all infrastructure assets and dependencies." },
+          { "step": "2", "title": "Monitor", "desc": "Implement event and health monitoring." },
+          { "step": "3", "title": "Correlate", "desc": "Enable AIOps for intelligent event correlation." },
+          { "step": "4", "title": "Automate", "desc": "Deploy runbooks and remediation automation." }
         ]
       },
       {
-        "slug": "hrsd",
-        "title": "HR Service Delivery",
-        "desc": "Transform employee experiences with modern HR workflows and self-service portals.",
-        "icon": "Users",
-        "challenge": "Fragmented HR systems and manual processes create poor employee experiences, slow onboarding, and compliance risks.",
+        "parent": "servicenow",
+        "slug": "servicenow-itam",
+        "title": "IT Asset Management",
+        "desc": "Manage the full lifecycle of hardware, software, and cloud assets with total control.",
+        "icon": "Database",
+        "challenge": "Poor asset visibility leads to wasted spend, compliance risks, and audit failures.",
         "challenges": [
-          "Disconnected HR systems causing data inconsistency",
-          "Manual onboarding processes delaying productivity",
-          "Low employee satisfaction with HR services"
+          "Unknown software licence compliance gaps",
+          "Hardware lifecycles not tracked",
+          "Cloud resource sprawl and overspend"
         ],
-        "overview": "We implement ServiceNow HRSD to modernize how HR teams deliver services across the employee lifecycle. From onboarding to offboarding, case management to employee self-service, our solutions improve HR efficiency and transform the employee experience.",
+        "overview": "Our ITAM practice helps you govern assets from procurement to retirement—optimising costs, ensuring licence compliance, and reducing risk.",
         "outcomes": [
-          "Streamlined onboarding reducing time-to-productivity",
-          "Self-service portal reducing HR case volume by 40%+",
-          "Consistent, compliant HR case management",
-          "Improved employee satisfaction scores"
+          "30% reduction in software licensing waste",
+          "Full hardware lifecycle tracking",
+          "Proactive audit readiness"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Audit",
-            "desc": "Review current HR processes and system landscape."
-          },
-          {
-            "step": "2",
-            "title": "Design",
-            "desc": "Map employee journeys and service catalog."
-          },
-          {
-            "step": "3",
-            "title": "Build",
-            "desc": "Implement HRSD modules and self-service portal."
-          },
-          {
-            "step": "4",
-            "title": "Adopt",
-            "desc": "Drive HR team and employee adoption."
-          }
+          { "step": "1", "title": "Inventory", "desc": "Discover all hardware, software, and cloud assets." },
+          { "step": "2", "title": "Normalise", "desc": "Enrich and reconcile asset data." },
+          { "step": "3", "title": "Govern", "desc": "Define policies and track compliance." },
+          { "step": "4", "title": "Optimise", "desc": "Identify cost savings and retirement plans." }
         ]
       },
       {
-        "slug": "managed-services",
-        "title": "Managed Services & Support",
-        "desc": "Proactive 24/7 operations with bilingual experts you can trust.",
+        "parent": "servicenow",
+        "slug": "servicenow-grc",
+        "title": "GRC & Customer Workflows",
+        "desc": "Automate governance, risk, and compliance while enhancing customer service experiences.",
         "icon": "Shield",
-        "challenge": "Most organizations lack internal capacity to maintain, optimize, and scale their ServiceNow platform long-term.",
+        "challenge": "Manual GRC processes and disconnected customer service workflows create operational and compliance risks.",
         "challenges": [
-          "Platform drift and technical debt accumulation",
-          "Insufficient internal expertise for optimization",
-          "Reactive support causing business disruption"
+          "Fragmented risk registers and evidence collection",
+          "Slow response to regulatory changes",
+          "Poor customer experiences due to disjointed workflows"
         ],
-        "overview": "Aldiratech's Managed Services model provides ongoing platform stewardship — from proactive monitoring and incident management to enhancements, upgrades, and optimization. Our bilingual team operates around the clock to ensure your ServiceNow investment delivers continuous value.",
+        "overview": "We deploy ServiceNow GRC to automate risk management, policy compliance, and audit processes, while also enhancing customer workflows for seamless service delivery.",
         "outcomes": [
-          "Platform stability with 99.9% uptime SLA",
-          "Continuous optimization and enhancement delivery",
-          "Proactive issue identification before business impact",
-          "Predictable cost model for IT operations"
+          "100% audit readiness",
+          "Real‑time risk visibility",
+          "Improved customer satisfaction scores"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Onboard",
-            "desc": "Knowledge transfer and environment assessment."
-          },
-          {
-            "step": "2",
-            "title": "Stabilize",
-            "desc": "Resolve existing issues and establish baseline."
-          },
-          {
-            "step": "3",
-            "title": "Optimize",
-            "desc": "Continuous improvement and enhancement delivery."
-          },
-          {
-            "step": "4",
-            "title": "Evolve",
-            "desc": "Strategic platform roadmap and capability expansion."
-          }
+          { "step": "1", "title": "Assess", "desc": "Map current GRC and customer processes." },
+          { "step": "2", "title": "Design", "desc": "Define GRC framework and customer journey maps." },
+          { "step": "3", "title": "Implement", "desc": "Configure GRC and customer workflow modules." },
+          { "step": "4", "title": "Monitor", "desc": "Continual compliance monitoring and CX optimisation." }
         ]
       },
       {
-        "slug": "ai-automation",
-        "title": "AI & Automation",
-        "desc": "Deploy intelligent automation that reduces manual work and accelerates enterprise operations.",
-        "icon": "Zap",
-        "challenge": "Manual processes, repetitive tasks, and reactive operations constrain organizational productivity and scalability.",
+        "parent": "ai-automation",
+        "slug": "ai-genai",
+        "title": "Generative AI & LLMs",
+        "desc": "Harness the power of large language models for content, code, and process automation.",
+        "icon": "Sparkles",
+        "challenge": "Organisations struggle to move beyond hype and put GenAI into production safely and at scale.",
         "challenges": [
-          "High manual effort in routine IT and business processes",
-          "Slow response times due to human-dependent workflows",
-          "Inability to scale operations without adding headcount"
+          "Unclear enterprise use cases for LLMs",
+          "Data privacy and hallucination risks",
+          "Integration with existing systems"
         ],
-        "overview": "We help organizations harness AI and intelligent automation within ServiceNow to eliminate manual work, accelerate decision-making, and scale operations efficiently. From virtual agents to predictive analytics and workflow automation, we design AI-powered solutions that create measurable operational impact.",
+        "overview": "We help you identify high‑value GenAI use cases, build secure AI pipelines, and deploy LLM‑powered applications that drive real business outcomes.",
         "outcomes": [
-          "40-60% reduction in manual task handling",
-          "Faster incident resolution through AI-assisted triage",
-          "24/7 virtual agent handling tier-1 requests",
-          "Predictive analytics for proactive problem management"
+          "Validated GenAI use cases with business ROI",
+          "Secure, governed AI infrastructure",
+          "AI‑augmented workflows reducing manual effort"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Identify",
-            "desc": "Map automation opportunities and ROI potential."
-          },
-          {
-            "step": "2",
-            "title": "Design",
-            "desc": "Architect AI and automation workflows."
-          },
-          {
-            "step": "3",
-            "title": "Deploy",
-            "desc": "Implement and test automation solutions."
-          },
-          {
-            "step": "4",
-            "title": "Scale",
-            "desc": "Expand automation coverage and measure impact."
-          }
+          { "step": "1", "title": "Discover", "desc": "Identify and prioritise GenAI opportunities." },
+          { "step": "2", "title": "Prototype", "desc": "Build rapid proof‑of‑concept with your data." },
+          { "step": "3", "title": "Engineer", "desc": "Production‑grade implementation and guardrails." },
+          { "step": "4", "title": "Scale", "desc": "Expand across the enterprise with governance." }
         ]
       },
       {
-        "slug": "cloud-advisory",
-        "title": "Cloud & Infrastructure Advisory",
-        "desc": "Strategic cloud guidance aligned with your business architecture and Vision 2030 objectives.",
-        "icon": "Cloud",
-        "challenge": "Unstructured cloud adoption creates security gaps, cost overruns, and misalignment between infrastructure and business needs.",
+        "parent": "ai-automation",
+        "slug": "ai-strategy",
+        "title": "AI Strategy & PoC",
+        "desc": "Define your enterprise AI roadmap and validate it with rapid proofs‑of‑concept.",
+        "icon": "Compass",
+        "challenge": "Without a coherent AI strategy, organisations invest in disjointed pilots that never scale.",
         "challenges": [
-          "Lack of cloud strategy and governance framework",
-          "Uncontrolled cloud costs and resource sprawl",
-          "Security and compliance risks in hybrid environments"
+          "AI initiatives not aligned to business goals",
+          "Lack of clear ROI and success metrics",
+          "Proof‑of‑concept failures due to poor data readiness"
         ],
-        "overview": "Our cloud advisory practice helps organizations define and execute cloud strategies that support digital transformation goals. We assess infrastructure readiness, design cloud architectures, and provide governance frameworks that balance agility with security and cost control.",
+        "overview": "We craft a pragmatic AI strategy, assess data and technology readiness, and deliver quick‑win PoCs that build momentum for enterprise‑wide adoption.",
         "outcomes": [
-          "Clear cloud strategy aligned to business objectives",
-          "Optimized cloud costs through right-sizing and governance",
-          "Secure, compliant hybrid and multi-cloud environments",
-          "Faster time-to-value for cloud initiatives"
+          "AI strategy aligned with business priorities",
+          "2‑3 successful PoCs demonstrating value",
+          "Data and technology readiness assessment"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Assess",
-            "desc": "Evaluate current infrastructure and cloud readiness."
-          },
-          {
-            "step": "2",
-            "title": "Strategize",
-            "desc": "Define cloud architecture and migration roadmap."
-          },
-          {
-            "step": "3",
-            "title": "Govern",
-            "desc": "Establish policies, guardrails, and cost controls."
-          },
-          {
-            "step": "4",
-            "title": "Execute",
-            "desc": "Migrate, optimize, and operate cloud environments."
-          }
+          { "step": "1", "title": "Assess", "desc": "Evaluate AI maturity, data, and skills." },
+          { "step": "2", "title": "Strategise", "desc": "Define AI vision and implementation roadmap." },
+          { "step": "3", "title": "Prove", "desc": "Build and test a high‑impact PoC." },
+          { "step": "4", "title": "Plan", "desc": "Scale‑up plan with governance and investment." }
         ]
       },
       {
-        "slug": "talent-solutions",
-        "title": "Talent Solutions",
-        "desc": "Access certified ServiceNow professionals and specialist technology talent on demand.",
-        "icon": "GraduationCap",
-        "challenge": "ServiceNow talent is scarce, expensive, and difficult to retain — creating delivery gaps and project delays.",
+        "parent": "ai-automation",
+        "slug": "ai-rpa",
+        "title": "Robotic Process Automation",
+        "desc": "Automate repetitive, manual tasks across legacy systems with software robots.",
+        "icon": "Bot",
+        "challenge": "Manual data entry, copy‑paste, and reconciliation tasks consume thousands of hours and introduce errors.",
         "challenges": [
-          "Shortage of certified ServiceNow professionals in the KSA market",
-          "High cost and risk of full-time specialist hiring",
-          "Capability gaps delaying digital transformation programs"
+          "High volume of rule‑based manual processes",
+          "Legacy systems without APIs",
+          "Employee burnout from repetitive work"
         ],
-        "overview": "Aldiratech provides access to a curated network of certified ServiceNow developers, architects, consultants, and ITSM specialists. Whether you need project augmentation, dedicated resource teams, or specialist expertise for short-term engagements, we match the right talent to your needs.",
+        "overview": "We design and deploy RPA bots that mimic human actions, integrating seamlessly with your existing applications to free up your workforce for higher‑value work.",
         "outcomes": [
-          "Rapid access to certified ServiceNow talent",
-          "Flexible engagement models reducing hiring risk",
-          "Knowledge transfer building internal capability",
-          "Delivery continuity for transformation programs"
+          "60‑80% reduction in manual processing time",
+          "Error‑free transaction processing",
+          "24/7 unattended bot operation"
         ],
         "process": [
-          {
-            "step": "1",
-            "title": "Define",
-            "desc": "Understand role requirements and delivery context."
-          },
-          {
-            "step": "2",
-            "title": "Match",
-            "desc": "Identify and vet the right certified professionals."
-          },
-          {
-            "step": "3",
-            "title": "Engage",
-            "desc": "Onboard resources and integrate with your team."
-          },
-          {
-            "step": "4",
-            "title": "Support",
-            "desc": "Ongoing performance management and delivery oversight."
-          }
+          { "step": "1", "title": "Discover", "desc": "Identify and prioritise automation candidates." },
+          { "step": "2", "title": "Design", "desc": "Document process and design bot logic." },
+          { "step": "3", "title": "Build", "desc": "Develop and test the RPA solution." },
+          { "step": "4", "title": "Run", "desc": "Deploy, monitor, and continuously improve." }
+        ]
+      },
+      {
+        "parent": "ai-automation",
+        "slug": "ai-analytics",
+        "title": "Data & Analytics",
+        "desc": "Build the data foundations and analytics dashboards that power AI and business intelligence.",
+        "icon": "BarChart3",
+        "challenge": "Poor data quality, siloed sources, and lack of analytics capabilities prevent organisations from becoming data‑driven.",
+        "challenges": [
+          "Data scattered across multiple systems",
+          "No single source of truth for reporting",
+          "Analytics not actionable for business users"
+        ],
+        "overview": "We engineer modern data pipelines, centralise data in cloud data platforms, and deliver intuitive analytics that democratise insights across your organisation.",
+        "outcomes": [
+          "Unified data platform with clean, governed data",
+          "Self‑service analytics and real‑time dashboards",
+          "Data‑driven decision making at all levels"
+        ],
+        "process": [
+          { "step": "1", "title": "Assess", "desc": "Evaluate data landscape and quality." },
+          { "step": "2", "title": "Architect", "desc": "Design the target data platform." },
+          { "step": "3", "title": "Build", "desc": "Implement data pipelines and models." },
+          { "step": "4", "title": "Adopt", "desc": "Roll out dashboards and training." }
         ]
       }
-    ]
-  },
+  ]
+},
   "industries": {
     "eyebrow": "Industries We Serve",
     "titleA": "Solutions Built Around",

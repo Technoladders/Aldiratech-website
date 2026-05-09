@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Compass, Layers, Settings, Activity, Users, Shield, Zap, Cloud, GraduationCap } from "lucide-react";
+import { ArrowUpRight, Compass, Layers, Settings, Activity, Users, Shield, Zap, Cloud, GraduationCap, BarChart3, Workflow, BrainCircuit, RefreshCw, Headphones, LineChart, Package, Bot, Database, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { CtaBanner } from "@/components/site/CtaBanner";
@@ -9,7 +9,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useStaggerReveal, useScrollReveal } from "@/hooks/useScrollReveal";
 
 const iconMap: Record<string, React.ElementType> = {
-  Compass, Layers, Settings, Activity, Users, Shield, Zap, Cloud, GraduationCap,
+  Compass, Layers, Settings, Activity, Users, Shield, Zap, Cloud, GraduationCap, BarChart3, Workflow, BrainCircuit, RefreshCw, Headphones, LineChart, Package, Bot, Database, Sparkles
 };
 
 export default function Services() {
@@ -20,6 +20,8 @@ export default function Services() {
   const gridRef = useStaggerReveal(0.05);
   const whyRef = useStaggerReveal(0.1);
   const bannerRef = useScrollReveal();
+
+  const mainItems = s.items.filter((item: any) => !item.parent);
 
   return (
     <main className="min-h-screen bg-background">
@@ -36,7 +38,7 @@ export default function Services() {
           <p className={`text-muted-foreground max-w-2xl mb-16 ${isAr ? "font-arabic" : ""}`}>{s.subtitle}</p>
 
           <div ref={gridRef} className="divide-y divide-border-solid">
-            {s.items.map((item, idx) => {
+            {mainItems.map((item, idx) => {
               const Icon = iconMap[item.icon] || Compass;
               return (
                 <Link
