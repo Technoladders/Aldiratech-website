@@ -38,39 +38,39 @@ function IndustryCard({ item, idx }: { item: any; idx: number }) {
       className={`reveal-${isEven ? "left" : "right"} grid lg:grid-cols-12 overflow-hidden rounded-3xl border border-border-solid shadow-card hover:shadow-luxe transition-all duration-700`}
     >
       {/* Dark panel */}
-      <div className={`lg:col-span-4 bg-gradient-to-br ${accent} p-10 flex flex-col justify-between ${!isEven ? "lg:order-2" : ""}`}>
+      <div className={`lg:col-span-4 bg-gradient-to-br ${accent} p-8 flex flex-col justify-between ${!isEven ? "lg:order-2" : ""}`}>
         <div>
-          <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
-            <Icon className="w-8 h-8 text-yellow-300" />
+          <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center mb-2">
+            <Icon className="w-6 h-6 text-yellow-300" />
           </div>
-          <h3 className={`font-display font-bold text-2xl text-white mb-3 ${isAr ? "font-arabic" : ""}`}>{item.title}</h3>
-          <p className={`text-white/65 text-sm leading-relaxed ${isAr ? "font-arabic" : ""}`}>{item.desc}</p>
+          <h3 className={`font-display font-bold text-xl text-white mb-2 ${isAr ? "font-arabic" : ""}`}>{item.title}</h3>
+          <p className={`text-white/65 text-xs leading-relaxed ${isAr ? "font-arabic" : ""}`}>{item.desc}</p>
         </div>
         {/* Benefits pills */}
-        <div className="grid grid-cols-2 gap-2 mt-8">
+        <div className="grid grid-cols-2 gap-2 mt-4">
           {item.benefits.map((b: string) => (
             <div key={b} className="bg-white/10 backdrop-blur rounded-xl px-3 py-2">
-              <span className={`text-xs text-white/90 font-medium ${isAr ? "font-arabic" : ""}`}>{b}</span>
+              <span className={`text-[10px] text-white/90 font-medium ${isAr ? "font-arabic" : ""}`}>{b}</span>
             </div>
           ))}
         </div>
       </div>
 
       {/* Content panel */}
-      <div className={`lg:col-span-8 p-10 bg-surface/30 ${!isEven ? "lg:order-1" : ""}`}>
-        <div className="grid sm:grid-cols-2 gap-8 h-full">
+      <div className={`lg:col-span-8 p-8 bg-surface/30 ${!isEven ? "lg:order-1" : ""}`}>
+        <div className="grid sm:grid-cols-2 gap-4 h-full">
           {/* Pain points */}
           <div>
             <div className={`text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold mb-5 ${isAr ? "font-arabic normal-case" : ""}`}>
               {isAr ? "تحديات القطاع" : "Key Challenges"}
             </div>
-            <div className="space-y-4">
+            <div className="space-y-2">
               {item.painPoints.map((p: string, i: number) => (
                 <div key={i} className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center shrink-0 mt-0.5">
                     <span className="text-destructive text-[10px] font-bold">{i + 1}</span>
                   </div>
-                  <p className={`text-sm text-muted-foreground leading-relaxed ${isAr ? "font-arabic" : ""}`}>{p}</p>
+                  <p className={`text-xs text-muted-foreground leading-relaxed ${isAr ? "font-arabic" : ""}`}>{p}</p>
                 </div>
               ))}
             </div>
@@ -82,7 +82,7 @@ function IndustryCard({ item, idx }: { item: any; idx: number }) {
               <div className={`text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold mb-5 ${isAr ? "font-arabic normal-case" : ""}`}>
                 {isAr ? "حل ألديراتك" : "Our Solution"}
               </div>
-              <p className={`text-sm text-muted-foreground leading-relaxed ${isAr ? "font-arabic" : ""}`}>{item.solutions}</p>
+              <p className={`text-xs text-muted-foreground leading-relaxed ${isAr ? "font-arabic" : ""}`}>{item.solutions}</p>
             </div>
             <Link
               to="/contact"
@@ -131,7 +131,7 @@ export default function Industries() {
       </div>
 
       {/* Industry panels */}
-      <section className="py-20 lg:py-28">
+      <section className="py-8 lg:py-8">
         <div className="container mx-auto px-6 lg:px-10 space-y-10">
           {ind.items.map((item, idx) => (
             <IndustryCard key={item.slug} item={item} idx={idx} />

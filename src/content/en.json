@@ -596,6 +596,43 @@
       }
   ]
 },
+"aiSection": {
+  "eyebrow": "AI & Digital Transformation",
+  "titleA": "Intelligent Automation",
+  "titleB": "& Generative AI Consulting",
+  "subtitle": "We design and implement generative AI, machine learning, RPA, analytics, and data engineering solutions that integrate with enterprise platforms and improve key business processes. From strategy and proof of concept through deployment, our capabilities are integrated with Salesforce, SAP, and ServiceNow ecosystems.",
+  "cta": "Explore AI Solutions",
+  "whatSetsApart": {
+    "eyebrow": "What Sets Us Apart",
+    "title": "As Your Technology Partner",
+    "items": [
+      {
+        "title": "Global Delivery",
+        "desc": "Cost-effective delivery from Saudi Arabia with global standards in architecture, security, and governance. Onshore, nearshore & offshore models."
+      },
+      {
+        "title": "Certified Platform Specialists",
+        "desc": "Deep expertise across Salesforce, SAP, ServiceNow, MuleSoft, and AI — enabling truly integrated enterprise transformation."
+      },
+      {
+        "title": "End-to-End Accountability",
+        "desc": "From early advisory and solution design through implementation, go-live, and long-term managed services — we own the outcome."
+      },
+      {
+        "title": "AI-Embedded Innovation",
+        "desc": "We build Generative AI, machine learning, and automation into your enterprise platforms for measurable, lasting business impact."
+      }
+    ]
+  },
+  "about": {
+    "title": "Aldiratech",
+    "subtitle": "Technology consulting that delivers real business outcomes",
+    "body": "Aldiratech is a technology consulting company, helping businesses modernise their operations through enterprise platforms, generative AI, and cloud-native solutions. We combine functional expertise with strong engineering capabilities to deliver outcomes - not just implementations.",
+    "founded": "Established in 2018, our practice areas span CRM & customer experience, ERP & business transformation, IT service management, integration & API management, and intelligent automation."
+  },
+  "integrated": "Integrated with",
+  "platforms": "Salesforce · SAP · ServiceNow"
+},
   "industries": {
     "eyebrow": "Industries We Serve",
     "titleA": "Solutions Built Around",

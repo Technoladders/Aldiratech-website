@@ -12,7 +12,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useContent } from "@/hooks/useContent";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeToggle } from "./ThemeToggle";
-import AldiraLogo from "@/assets/Aldira_logo.png";
+import AldiraLogo from "@/assets/aldira_logo_trans_2.png";
 
 const indIcons: Record<string, React.ElementType> = {
   "government": Building2, "oil-gas": Flame, "healthcare": HeartPulse,
@@ -289,11 +289,11 @@ const serviceColumns = useMemo(() => {
             {/* Logo */}
             {location.pathname === "/" ? (
               <a href="#home" className="shrink-0">
-                <img src={AldiraLogo} alt="Aldiratech" className="h-14 w-auto object-contain" />
+                <img src={AldiraLogo} alt="Aldiratech" className="h-[120px] w-auto object-contain" />
               </a>
             ) : (
               <Link to="/" className="shrink-0">
-                <img src={AldiraLogo} alt="Aldiratech" className="h-24 w-auto object-contain" />
+                <img src={AldiraLogo} alt="Aldiratech" className="h-[120px] w-auto object-contain" />
               </Link>
             )}
 
@@ -303,7 +303,7 @@ const serviceColumns = useMemo(() => {
                   onMouseEnter={() => hasMega.includes(item.key) ? openMenu(item.key) : closeMenu()}
                   onMouseLeave={closeMenu}>
                   <Link to={item.href}
-                    className={`flex items-center gap-0.5 px-2.5 py-1.5 text-xs font-medium transition-colors relative group whitespace-nowrap ${isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-primary"}`}>
+                    className={`flex items-center gap-0.5 px-2.5 py-1.5 text-md font-medium transition-colors relative group whitespace-nowrap ${isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-primary"}`}>
                     {item.label}
                     {hasMega.includes(item.key) && (
                       <ChevronDown className={`w-3 h-3 opacity-50 transition-transform duration-300 ${activeDropdown === item.key ? "rotate-180" : ""}`} />

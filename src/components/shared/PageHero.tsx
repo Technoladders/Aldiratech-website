@@ -130,7 +130,7 @@ export const PageHero = ({ badge, title, subtitle, children, visual = "compass" 
   const Illustration = Illustrations[visual];
 
   return (
-    <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
+    <section className="relative pt-24 pb-8 lg:pt-24 lg:pb-8 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-gold/5" />
       <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary/8 blur-3xl pointer-events-none" />
@@ -154,11 +154,11 @@ export const PageHero = ({ badge, title, subtitle, children, visual = "compass" 
               <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
               {badge}
             </div>
-            <h1 className={`font-display font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1] mb-6 ${isAr ? "font-arabic leading-[1.25]" : ""}`}>
+            <h1 className={`font-display font-bold text-xl md:text-2xl lg:text-3xl tracking-tight leading-[1.1] mb-6 ${isAr ? "font-arabic leading-[1.25]" : ""}`}>
               {title}
             </h1>
             {subtitle && (
-              <p className={`text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed ${isAr ? "font-arabic" : ""}`}>
+              <p className={`text-md md:text-md text-muted-foreground max-w-2xl leading-relaxed ${isAr ? "font-arabic" : ""}`}>
                 {subtitle}
               </p>
             )}

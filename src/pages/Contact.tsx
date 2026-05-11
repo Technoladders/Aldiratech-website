@@ -63,7 +63,7 @@ export default function Contact() {
       <Navbar />
       <PageHero badge={ct.heroBadge} title={ct.heroTitle} subtitle={ct.heroSubtitle} visual="network" />
 
-      <section className="py-20 lg:py-28">
+      <section className="py-8 lg:py-14">
         <div className="container mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-12">
 
@@ -71,12 +71,12 @@ export default function Contact() {
             <div ref={formRef} className="reveal-left lg:col-span-7">
               <div className="glass rounded-3xl p-8 lg:p-10 gold-edge">
                 <div className={`font-display font-bold text-2xl mb-1 ${isAr ? "font-arabic" : ""}`}>{ct.formTitle}</div>
-                <p className={`text-sm text-muted-foreground mb-8 ${isAr ? "font-arabic" : ""}`}>{ct.formSubtitle}</p>
+                <p className={`text-xs text-muted-foreground mb-8 ${isAr ? "font-arabic" : ""}`}>{ct.formSubtitle}</p>
 
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center py-16 text-center">
                     <div className="w-20 h-20 rounded-full gradient-emerald flex items-center justify-center mb-6 shadow-luxe animate-float-slow">
-                      <CheckCircle2 className="w-10 h-10 text-gold" />
+                      <CheckCircle2 className="w-8 h-8 text-gold" />
                     </div>
                     <h3 className={`font-display font-bold text-xl mb-2 ${isAr ? "font-arabic" : ""}`}>
                       {isAr ? "تم إرسال رسالتك!" : "Message Sent!"}
@@ -86,8 +86,8 @@ export default function Contact() {
                     </p>
                   </div>
                 ) : (
-                  <div className="space-y-5">
-                    <div className="grid sm:grid-cols-2 gap-5">
+                  <div className="space-y-4">
+                    <div className="grid sm:grid-cols-2 gap-4">
                       {[
                         { key: "name", type: "text", label: ct.fields.name },
                         { key: "company", type: "text", label: ct.fields.company },
@@ -99,12 +99,12 @@ export default function Contact() {
                             value={form[f.key as keyof typeof form]}
                             onChange={(e) => setForm({ ...form, [f.key]: e.target.value })}
                             placeholder={f.label}
-                            className={`w-full h-12 px-4 rounded-2xl bg-background border border-border-solid text-sm focus:outline-none focus:border-primary transition-colors ${isAr ? "font-arabic" : ""}`}
+                            className={`w-full h-10 px-4 rounded-2xl bg-background border border-border-solid text-xs focus:outline-none focus:border-primary transition-colors ${isAr ? "font-arabic" : ""}`}
                           />
                         </div>
                       ))}
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-5">
+                    <div className="grid sm:grid-cols-2 gap-4">
                       {[
                         { key: "email", type: "email", label: ct.fields.email },
                         { key: "phone", type: "tel", label: ct.fields.phone },
@@ -116,7 +116,7 @@ export default function Contact() {
                             value={form[f.key as keyof typeof form]}
                             onChange={(e) => setForm({ ...form, [f.key]: e.target.value })}
                             placeholder={f.label}
-                            className={`w-full h-12 px-4 rounded-2xl bg-background border border-border-solid text-sm focus:outline-none focus:border-primary transition-colors ${isAr ? "font-arabic" : ""}`}
+                            className={`w-full h-10 px-4 rounded-2xl bg-background border border-border-solid text-xs focus:outline-none focus:border-primary transition-colors ${isAr ? "font-arabic" : ""}`}
                           />
                         </div>
                       ))}
@@ -126,7 +126,7 @@ export default function Contact() {
                       <select
                         value={form.service}
                         onChange={(e) => setForm({ ...form, service: e.target.value })}
-                        className={`w-full h-12 px-4 rounded-2xl bg-background border border-border-solid text-sm focus:outline-none focus:border-primary transition-colors appearance-none ${isAr ? "font-arabic" : ""}`}
+                        className={`w-full h-10 px-4 rounded-2xl bg-background border border-border-solid text-xs focus:outline-none focus:border-primary transition-colors appearance-none ${isAr ? "font-arabic" : ""}`}
                       >
                         <option value="">{isAr ? "اختر خدمة" : "Select a service"}</option>
                         {ct.services.map((sv) => <option key={sv} value={sv}>{sv}</option>)}
@@ -139,12 +139,12 @@ export default function Contact() {
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}
                         placeholder={ct.fields.message}
-                        className={`w-full px-4 py-3 rounded-2xl bg-background border border-border-solid text-sm focus:outline-none focus:border-primary transition-colors resize-none ${isAr ? "font-arabic" : ""}`}
+                        className={`w-full px-4 py-3 rounded-2xl bg-background border border-border-solid text-xs focus:outline-none focus:border-primary transition-colors resize-none ${isAr ? "font-arabic" : ""}`}
                       />
                     </div>
                     <Button
                       variant="hero"
-                      size="lg"
+                      size="sm"
                       className="w-full btn-shimmer"
                       onClick={() => setSubmitted(true)}
                     >
@@ -157,18 +157,18 @@ export default function Contact() {
             </div>
 
             {/* ── Sidebar ── */}
-            <div ref={sideRef} className="reveal-right lg:col-span-5 space-y-6">
+            <div ref={sideRef} className="reveal-right lg:col-span-5 space-y-4">
 
               {/* Skyline map card */}
               <div className="glass rounded-3xl overflow-hidden gold-edge">
                 <div className="h-44">
                   <RiyadhSkyline />
                 </div>
-                <div className="p-6">
+                <div className="p-4">
                   <div className={`font-display font-semibold mb-3 ${isAr ? "font-arabic" : ""}`}>{ct.officeTitle}</div>
-                  <ul className={`space-y-3 text-sm text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
+                  <ul className={`space-y-3 text-xs text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
                     <li className="flex items-start gap-3"><MapPin className="w-4 h-4 mt-0.5 text-primary shrink-0" />{ct.address}</li>
-                    <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-primary shrink-0" /><a href={`tel:${ct.phone}`} className="hover:text-primary transition-colors">{ct.phone}</a></li>
+                    {/* <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-primary shrink-0" /><a href={`tel:${ct.phone}`} className="hover:text-primary transition-colors">{ct.phone}</a></li> */}
                     <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-primary shrink-0" /><a href={`mailto:${ct.email}`} className="hover:text-primary transition-colors">{ct.email}</a></li>
                     <li className="flex items-center gap-3"><Clock className="w-4 h-4 text-primary shrink-0" />{isAr ? "الأحد – الخميس، 9 ص – 6 م" : "Sun – Thu, 9AM – 6PM AST"}</li>
                   </ul>
@@ -176,8 +176,8 @@ export default function Contact() {
               </div>
 
               {/* Global presence */}
-              <div className="glass rounded-3xl p-6">
-                <div className="flex items-center gap-2 mb-3">
+              <div className="glass rounded-3xl p-4">
+                <div className="flex items-center gap-2 mb-2">
                   <Globe className="w-4 h-4 text-gold" />
                   <div className={`font-display font-semibold text-sm ${isAr ? "font-arabic" : ""}`}>{ct.globalTitle}</div>
                 </div>

@@ -29,13 +29,13 @@ export default function Services() {
       <PageHero badge={s.heroBadge} title={s.heroTitle} subtitle={s.heroSubtitle} visual="network" />
 
       {/* ── Services: large numbered list, NOT a card grid ── */}
-      <section className="py-20 lg:py-28">
+      <section className="py-8 lg:py-8">
         <div className="container mx-auto px-6 lg:px-10">
-          <div className={`text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-3 ${isAr ? "font-arabic normal-case" : ""}`}>{s.eyebrow}</div>
-          <h2 className={`font-display font-bold text-3xl md:text-5xl mb-3 ${isAr ? "font-arabic" : ""}`}>
+          {/* <div className={`text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-3 ${isAr ? "font-arabic normal-case" : ""}`}>{s.eyebrow}</div> */}
+          {/* <h2 className={`font-display font-bold text-xl md:text-3xl mb-3 ${isAr ? "font-arabic" : ""}`}>
             {s.titleA}
-          </h2>
-          <p className={`text-muted-foreground max-w-2xl mb-16 ${isAr ? "font-arabic" : ""}`}>{s.subtitle}</p>
+          </h2> */}
+          {/* <p className={`text-muted-foreground max-w-2xl text-md mb-8 ${isAr ? "font-arabic" : ""}`}>{s.subtitle}</p> */}
 
           <div ref={gridRef} className="divide-y divide-border-solid">
             {mainItems.map((item, idx) => {
@@ -44,7 +44,7 @@ export default function Services() {
                 <Link
                   key={item.slug}
                   to={`/services/${item.slug}`}
-                  className="reveal-up group flex items-start gap-8 py-8 hover:bg-primary/3 -mx-4 px-4 rounded-2xl transition-all duration-500"
+                  className="reveal-up group flex items-start gap-8 py-4 hover:bg-primary/3 -mx-4 px-4 rounded-2xl transition-all duration-500"
                 >
                   {/* Index number */}
                   <span className="font-display text-5xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors w-16 shrink-0 leading-none mt-1">
@@ -60,15 +60,15 @@ export default function Services() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <h3 className={`font-display font-semibold text-xl mb-2 group-hover:text-primary transition-colors ${isAr ? "font-arabic" : ""}`}>{item.title}</h3>
-                        <p className={`text-muted-foreground text-sm leading-relaxed max-w-lg ${isAr ? "font-arabic" : ""}`}>{item.desc}</p>
+                        <h3 className={`font-display font-semibold text-lg mb-2 group-hover:text-primary transition-colors ${isAr ? "font-arabic" : ""}`}>{item.title}</h3>
+                        <p className={`text-muted-foreground text-xs leading-relaxed max-w-lg ${isAr ? "font-arabic" : ""}`}>{item.desc}</p>
                       </div>
                       <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-all group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0 mt-1 rtl-flip" />
                     </div>
                     {/* Challenge chips */}
                     <div className="flex flex-wrap gap-2 mt-4">
                       {item.challenges.slice(0, 2).map((ch, i) => (
-                        <span key={i} className={`text-xs px-3 py-1 rounded-full bg-surface border border-border-solid text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
+                        <span key={i} className={`text-[10px] px-3 py-1 rounded-full bg-surface border border-border-solid text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
                           {ch.length > 40 ? ch.slice(0, 38) + "…" : ch}
                         </span>
                       ))}
@@ -82,18 +82,18 @@ export default function Services() {
       </section>
 
       {/* ── Why our approach: horizontal 3-panel ── */}
-      <section className="py-20 gradient-section">
+      <section className="py-4 gradient-section">
         <div className="container mx-auto px-6 lg:px-10">
           <div ref={whyRef} className="grid lg:grid-cols-3 gap-px bg-border-solid rounded-3xl overflow-hidden">
             {[
               { title: isAr ? "منهجية مُثبتة" : "Proven Methodology", desc: isAr ? "إطار تسليم من أربع مراحل مُحكم عبر 100+ مشروع مؤسسي." : "Four-phase delivery framework refined across 100+ enterprise ServiceNow projects globally.", icon: "✦" },
               { title: isAr ? "فرق ثنائية اللغة" : "Saudi-Bilingual Teams", desc: isAr ? "كل مشروع يقوده متخصصون معتمدون يتقنون العربية والإنجليزية." : "Every engagement delivered by certified experts fluent in both English and Arabic.", icon: "◆" },
-              { title: isAr ? "نتائج قابلة للقياس" : "Outcome-Led Delivery", desc: isAr ? "نقيس النجاح بنتائج أعمالك، لا بإنجازات المشروع." : "We measure success by your business results — not project milestones or billing hours.", icon: "▲" },
+              { title: isAr ? "نتائج قابلة للقياس" : "Outcome-Led Delivery", desc: isAr ? "نقيس النجاح بنتائج أعمالك، لا بإنجازات المشروع." : "We measure success by your business results - not project milestones or billing hours.", icon: "▲" },
             ].map((p) => (
-              <div key={p.title} className="reveal-scale bg-surface/80 p-10 hover:bg-primary/5 transition-colors duration-500">
-                <div className="text-gold text-3xl mb-5">{p.icon}</div>
-                <h3 className={`font-display font-semibold text-xl mb-3 ${isAr ? "font-arabic" : ""}`}>{p.title}</h3>
-                <p className={`text-muted-foreground text-sm leading-relaxed ${isAr ? "font-arabic" : ""}`}>{p.desc}</p>
+              <div key={p.title} className="reveal-scale bg-surface/80 px-10 py-4 hover:bg-primary/5 transition-colors duration-500">
+                <div className="text-gold text-3xl mb-2">{p.icon}</div>
+                <h3 className={`font-display font-semibold text-lg mb-3 ${isAr ? "font-arabic" : ""}`}>{p.title}</h3>
+                <p className={`text-muted-foreground text-xs leading-relaxed ${isAr ? "font-arabic" : ""}`}>{p.desc}</p>
               </div>
             ))}
           </div>
@@ -101,18 +101,18 @@ export default function Services() {
       </section>
 
       {/* ── Inline CTA strip ── */}
-      <div ref={bannerRef} className="reveal-up py-16 border-y border-border-solid">
+      <div ref={bannerRef} className="reveal-up py-8 border-y border-border-solid">
         <div className="container mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div>
             <div className={`text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-2 ${isAr ? "font-arabic normal-case" : ""}`}>
               {isAr ? "جاهز للبدء؟" : "Ready to Get Started?"}
             </div>
-            <p className={`text-2xl font-display font-bold ${isAr ? "font-arabic" : ""}`}>
+            <p className={`text-xl font-display font-bold ${isAr ? "font-arabic" : ""}`}>
               {isAr ? "تحدث إلى خبير ServiceNow اليوم" : "Talk to a ServiceNow expert today"}
             </p>
           </div>
           <Link to="/contact">
-            <button className="shrink-0 px-8 py-4 rounded-2xl gradient-emerald text-white font-display font-semibold hover:-translate-y-0.5 hover:shadow-luxe transition-all duration-500 whitespace-nowrap">
+            <button className="shrink-0 px-8 py-4 text-sm rounded-2xl gradient-emerald text-white font-display font-semibold hover:-translate-y-0.5 hover:shadow-luxe transition-all duration-500 whitespace-nowrap">
               {isAr ? "ابدأ المحادثة" : "Start the Conversation"} →
             </button>
           </Link>

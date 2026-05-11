@@ -5,7 +5,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useContent } from "@/hooks/useContent";
 import { AldiraGlyph, GOLD, GOLD_SOFT, EMERALD, ON_DARK } from "@/assets/design/logo-marks";
 import { useTheme } from "@/context/ThemeContext";
-import AldiraLogo from "@/assets/Aldira_logo.png";
+import AldiraLogo from "@/assets/aldira_logo_trans_2.png";
 
 
 export const Footer = () => {
@@ -19,23 +19,23 @@ export const Footer = () => {
   const t = c.footer;
 
   return (
-    <footer className="bg-surface/70 border-t border-border-solid pt-20 pb-8">
+    <footer className="bg-surface/70 border-t border-border-solid pt-10 pb-4">
       <div className="container mx-auto px-6 lg:px-10">
         {/* Exact same lg:grid-cols-12 grid as original — brand=4, office=3, certs=2, newsletter=3 */}
-        <div className="grid lg:grid-cols-12 gap-12 mb-16">
+        <div className="grid lg:grid-cols-12 gap-12 mb-6">
 
           {/* Brand — exact same SVG size/gap/wordmark as original Footer */}
           <div className="lg:col-span-4">
                        {location.pathname === "/" ? (
               <a href="#home" className="shrink-0">
-                <img src={AldiraLogo} alt="Aldiratech" className="h-14 w-auto object-contain" />
+                <img src={AldiraLogo} alt="Aldiratech" className="h-[120px] w-auto object-contain" />
               </a>
             ) : (
               <Link to="/" className="shrink-0">
                 <img src={AldiraLogo} alt="Aldiratech" className="h-24 w-auto object-contain" />
               </Link>
             )}
-            <p className={`text-sm text-muted-foreground leading-relaxed mb-6 max-w-sm ${isAr ? "font-arabic" : ""}`}>
+            <p className={`text-xs text-muted-foreground leading-relaxed mb-2 max-w-sm ${isAr ? "font-arabic" : ""}`}>
               {t.tagline}
             </p>
             <div className="flex gap-3">
@@ -54,10 +54,10 @@ export const Footer = () => {
 
           {/* Office — same as original */}
           <div className="lg:col-span-3">
-            <div className={`text-xs uppercase tracking-[0.2em] text-foreground font-semibold mb-5 ${isAr ? "font-arabic normal-case tracking-normal text-sm" : ""}`}>
+            <div className={`text-xs uppercase tracking-[0.2em] text-foreground font-semibold mb-4 ${isAr ? "font-arabic normal-case tracking-normal text-sm" : ""}`}>
               {t.office}
             </div>
-            <ul className={`space-y-3 text-sm text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
+            <ul className={`space-y-3 text-xs text-muted-foreground ${isAr ? "font-arabic" : ""}`}>
               <li className="flex gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary shrink-0" /> {t.address}
               </li>
@@ -92,10 +92,10 @@ export const Footer = () => {
 
           {/* Certifications — same as original */}
           <div className="lg:col-span-2">
-            <div className={`text-xs uppercase tracking-[0.2em] text-foreground font-semibold mb-5 ${isAr ? "font-arabic normal-case tracking-normal text-sm" : ""}`}>
+            <div className={`text-xs uppercase tracking-[0.2em] text-foreground font-semibold mb-4 ${isAr ? "font-arabic normal-case tracking-normal text-sm" : ""}`}>
               {t.certs}
             </div>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-xs text-muted-foreground">
               {t.certsList.map((cert) => (
                 <li key={cert}>{cert}</li>
               ))}
@@ -107,7 +107,7 @@ export const Footer = () => {
             <div className={`text-xs uppercase tracking-[0.2em] text-foreground font-semibold mb-5 ${isAr ? "font-arabic normal-case tracking-normal text-sm" : ""}`}>
               {t.stay}
             </div>
-            <p className={`text-sm text-muted-foreground mb-4 ${isAr ? "font-arabic" : ""}`}>{t.stayDesc}</p>
+            <p className={`text-xs text-muted-foreground mb-4 ${isAr ? "font-arabic" : ""}`}>{t.stayDesc}</p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
@@ -115,7 +115,7 @@ export const Footer = () => {
                 placeholder={t.emailPlaceholder}
                 className={`flex-1 h-11 px-4 rounded-full bg-background border border-border-solid text-sm focus:outline-none focus:border-primary transition-colors ${isAr ? "font-arabic" : ""}`}
               />
-              <Button variant="hero" size="icon" className="h-11 w-11 rounded-full shrink-0" aria-label="Subscribe">
+              <Button variant="hero" size="icon" className="h-10 w-10 rounded-full shrink-0" aria-label="Subscribe">
                 <ArrowRight className="w-4 h-4 rtl-flip" />
               </Button>
             </form>

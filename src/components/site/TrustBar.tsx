@@ -20,7 +20,7 @@ export const TrustBar = () => {
   const isAr = lang === "ar";
 
   return (
-    <section className="py-14 lg:py-20 border-y border-border-solid bg-surface/60 relative overflow-hidden">
+    <section className="py-8 lg:py-10 border-y border-border-solid bg-surface/60 relative overflow-hidden">
       <div className="absolute -top-20 -right-20 w-[700px] h-[700px] rounded-full bg-gold/5 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-20 -left-20 w-[700px] h-[700px] rounded-full bg-primary/5 blur-3xl pointer-events-none" />
 

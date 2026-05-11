@@ -4,12 +4,15 @@ import { ArrowRight, MapPin, Clock, Languages, Sparkles, } from "lucide-react";
 import heroImg from "@/assets/hero-riyadh.jpg";
 import heroLogo from "@/assets/Hero_img.png";
 import { useLanguage } from "@/context/LanguageContext";
+import { useContent } from "@/hooks/useContent";
 
 const featureIcons = [MapPin, Clock, Languages];
 
 export const Hero = () => {
-  const { t, lang } = useLanguage();
+  const { lang } = useLanguage();
+  const c = useContent();
   const isAr = lang === "ar";
+  const t = c.hero; // Use content from JSON instead of locales
 
   return (
 <section
@@ -48,25 +51,25 @@ export const Hero = () => {
               className="px-4 py-2 rounded-full border-primary/20 bg-primary/5 text-primary font-bold gap-2 uppercase"
             >
               <MapPin className="w-3.5 h-3.5 text-gold" />
-              {t.hero.badge}
+              {t.badge}
             </Badge>
 
-            <h1 className={`font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight ${isAr ? "font-arabic leading-[1.2]" : ""}`}>
-              {t.hero.titleA}
+            <h1 className={`font-display font-bold text-2xl md:text-3xl lg:text-5xl leading-[1.05] tracking-tight ${isAr ? "font-arabic leading-[1.2]" : ""}`}>
+              {t.titleA}
               <br />
               <span className="relative inline-block">
-                {t.hero.titleB} <span className="text-primary">{t.hero.titleHighlight}</span>.
+                {t.titleB} <span className="text-primary">{t.titleHighlight}</span>.
                 <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-gold to-transparent rounded-full" />
               </span>
             </h1>
 
-            <p className={`text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed ${isAr ? "font-arabic" : ""}`}>
-              {t.hero.subtitle}
+            <p className={`text-md md:text-md text-muted-foreground max-w-2xl leading-relaxed ${isAr ? "font-arabic" : ""}`}>
+              {t.subtitle}
             </p>
 
             {/* Feature cards */}
             <div className="grid sm:grid-cols-3 gap-4 pt-2">
-              {t.hero.features.map((f, i) => {
+              {t.features.map((f, i) => {
                 const Icon = featureIcons[i];
                 return (
                   <div
@@ -84,12 +87,12 @@ export const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="hero" size="lg" className="btn-shimmer">
-                {t.hero.ctaPrimary}
+              <Button variant="hero" size="sm" className="btn-shimmer">
+                {t.ctaPrimary}
                 <ArrowRight className="w-4 h-4 rtl-flip" />
               </Button>
-              <Button variant="heroGold" size="lg">
-                {t.hero.ctaSecondary}
+              <Button variant="heroGold" size="sm">
+                {t.ctaSecondary}
               </Button>
             </div>
           </div>
@@ -237,7 +240,7 @@ export const Hero = () => {
     {/* Stats card overlay at bottom */}
     <div className="absolute bottom-3 left-4 right-4 glass-strong rounded-2xl p-3">
       <div className="grid grid-cols-3 gap-4 text-center">
-        {t.hero.stats.map((s, i) => (
+        {t.stats.map((s, i) => (
           <div key={s.label} className={i === 1 ? "border-x border-border-solid" : ""}>
             <div className="text-lg font-display font-bold text-primary animate-count-glow">{s.value}</div>
             <div className={`text-[10px] uppercase tracking-wider text-muted-foreground ${isAr ? "font-arabic normal-case" : ""}`}>{s.label}</div>
@@ -306,7 +309,7 @@ export const Hero = () => {
       {/* Stats overlay */}
       <div className="glass-strong rounded-xl p-3">
         <div className="grid grid-cols-3 gap-3 text-center">
-          {t.hero.stats.map((s, i) => (
+          {t.stats.map((s, i) => (
             <div key={s.label} className={i === 1 ? "border-x border-border-solid" : ""}>
               <div className="text-lg font-display font-bold text-primary animate-count-glow">{s.value}</div>
               <div className={`text-[9px] uppercase tracking-wider text-muted-foreground ${isAr ? "font-arabic normal-case" : ""}`}>{s.label}</div>
